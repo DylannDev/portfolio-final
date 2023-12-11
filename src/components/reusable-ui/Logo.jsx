@@ -1,3 +1,3 @@
 export default function Logo() {
-  return <div>Dylann Dev.</div>;
+  return <div className="text-3xl font-bold">Dylann Dev.</div>;
 }
