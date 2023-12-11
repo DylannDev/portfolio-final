@@ -4,8 +4,6 @@ import { skillsData } from "../../../../SkillsData/skillsData";
 import Section from "../../../reusable-ui/Section";
 
 export default function Skills() {
-  console.log(skillsData);
-
   return (
     <Section>
       <Title
