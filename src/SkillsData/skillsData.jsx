@@ -17,7 +17,7 @@ const skillsDataObject = {
     },
     {
       icon: <SiTailwindcss />,
-      label: "Tailwind CSS",
+      label: "Tailwind",
     },
     {
       icon: <SiStyledcomponents />,

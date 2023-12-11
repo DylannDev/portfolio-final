@@ -1,18 +1,21 @@
 import Title from "../../../reusable-ui/Title";
 import SkillsCard from "./SkillsCard";
 import { skillsData } from "../../../../SkillsData/skillsData";
+import Section from "../../../reusable-ui/Section";
 
 export default function Skills() {
-  console.log(skillsData);
-
   return (
-    <div className="p-16">
-      <Title label="Skills" className="text-center mb-16 text-4xl" />
+    <Section>
+      <Title
+        label="Skills"
+        description="Voici les technos sur lesquelles je suis à l'aise."
+      />
+
       <div className="flex justify-around">
         {skillsData.map((skill, index) => (
           <SkillsCard key={index} skill={skill} />
         ))}
       </div>
-    </div>
+    </Section>
   );
 }

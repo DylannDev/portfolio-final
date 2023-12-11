@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="flex items-center gap-20">
         <img
           className="rounded-full w-[350px]"
-          src="/images/portrait-dylann-carré.jpg"
+          src="public/images/portrait-dylann-carré.jpg"
           alt="portrait dylann xavero"
         />
         <div className="flex flex-col items-center justify-center gap-4 w-[350px] h-[350px]">
