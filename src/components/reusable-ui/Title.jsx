@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-export default function Title({ className, label }) {
+export default function Title({ size, label }) {
   return (
-    <div className={`font-extrabold ${className}`}>
+    <div className={`font-extrabold ${size ? size : "text-3xl"}`}>
       <span className="text-primary">/</span>
       {label}
       <span className="text-secondary">.</span>
