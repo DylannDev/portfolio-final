@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="flex items-center justify-center h-[100dvh]">
       <div className="flex items-center gap-20">
         <img
-          className="rounded-full w-[350px] shadow-lg"
+          className="rounded-full w-[350px] shadow-md"
           src="public/images/portrait-dylann-carré.jpg"
           alt="portrait dylann xavero"
         />
@@ -20,7 +20,7 @@ export default function Hero() {
           <p className="font-extrabold text-3xl text-slate-600  ">
             Dev Front-End React
           </p>
-          <Button Icon={<PiPaperPlaneTilt />} label="d.xavero@hotmail.com" />
+          <Button Icon={<PiPaperPlaneTilt />} label="Contactez-moi" />
           <div className="flex items-center gap-3">
             <SocialIcon Icon={<FaGithub />} size="text-3xl" />
             <SocialIcon Icon={<FaLinkedinIn />} size="text-3xl" />
