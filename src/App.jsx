@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/pages/home/Home";
-import Work from "./components/pages/work/Work.jsx";
+import WorkPage from "./components/pages/work/WorkPage.jsx";
 import ErrorPage from "./components/pages/error/ErrorPage";
 import Layout from "./components/pages/layout/Layout.jsx";
 
@@ -16,7 +16,7 @@ function App() {
         },
         {
           path: "/work",
-          element: <Work />,
+          element: <WorkPage />,
         },
       ],
     },
