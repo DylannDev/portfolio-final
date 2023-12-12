@@ -6,12 +6,12 @@ import { PiPaperPlaneTilt } from "react-icons/pi";
 
 export default function Contact() {
   return (
-    <Section>
+    <Section className="-mb-44">
       <Title
         label="Contact"
         description="Discutons plus en détails de vos idées."
       />
-      <Card className="flex justify-between w-full p-20">
+      <Card className="flex justify-between items-center w-full p-20 bg-textLight">
         <h2 className="text-3xl font-bold">Un nouveau projet ?</h2>
         <p className="text-center text-lg">
           Mon travail vous intéresse? <br /> N’hésitez pas à me contacter 😃

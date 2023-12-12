@@ -10,8 +10,10 @@ export default function Layout() {
       <main>
         <Outlet />
       </main>
-      <Contact />
-      <Footer />
+      <div className="relative">
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
