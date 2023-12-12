@@ -3,7 +3,7 @@ import Badge from "../../reusable-ui/Badge";
 import Button from "../../reusable-ui/Button";
 import { PiPaperPlaneTilt } from "react-icons/pi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import SocialIcon from "../layout/Navbar/SocialIcon";
+import SocialIcon from "../../reusable-ui/SocialIcon";
 
 export default function Hero() {
   return (
