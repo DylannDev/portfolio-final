@@ -1,6 +1,6 @@
 import NavbarLinks from "./NavbarLinks";
 import Logo from "../../../reusable-ui/Logo";
-import SocialIcon from "./SocialIcon";
+import SocialIcon from "../../../reusable-ui/SocialIcon";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export default function Navbar() {
