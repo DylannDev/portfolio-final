@@ -16,7 +16,7 @@ const projectsData = [
     image: { src: "public/images/crusty-pizza.svg", alt: "logo crusty pizza" },
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos obcaecati quo necessitatibus, a illo fuga.",
-    badges: [REACT, STYLEDCOMPONENTS],
+    badges: [REACT, STYLEDCOMPONENTS, FIREBASE],
     links: {
       github: "https://github.com/DylannDev/crusty-pizza",
       demo: "https://crusty-pizza.vercel.app/",
@@ -46,7 +46,7 @@ const projectsData = [
 
 export default function Work() {
   return (
-    <Section>
+    <Section variant="large">
       <Title
         label="Work"
         description="Voici quelques projets sur lesquels j'ai pris plaisir à travailler."

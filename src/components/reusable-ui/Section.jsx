@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
-export default function Section({ children, className }) {
+export default function Section({ children, className, variant = "normal" }) {
   return (
-    <section className={`p-16  ${className ? className : "mb-40"}`}>
+    <section
+      className={`${className ? className : "mb-20"} ${
+        variant === "large" ? "py-16" : "p-16"
+      }`}
+    >
       {children}
     </section>
   );
