@@ -2,7 +2,7 @@
 export default function Title({ size, label, description }) {
   return (
     <div className={`text-center ${size ? size : "text-4xl mb-16"}`}>
-      <div className="font-extrabold mb-4">
+      <div className="font-extrabold">
         <span className="text-primary">/</span>
         {label}
         <span className="text-secondary">.</span>

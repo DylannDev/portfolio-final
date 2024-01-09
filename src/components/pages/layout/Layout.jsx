@@ -5,8 +5,10 @@ import Footer from "./Footer";
 
 export default function Layout() {
   return (
-    <div className="max-w-7xl mx-auto relative">
-      <Navbar />
+    <div className="max-w-7xl md:px-[50px] px-5 mx-auto">
+      <div className="relative md:px-[50px] px-5">
+        <Navbar />
+      </div>
       <main>
         <Outlet />
       </main>
