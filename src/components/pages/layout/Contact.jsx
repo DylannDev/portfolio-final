@@ -11,12 +11,16 @@ export default function Contact() {
         label="Contact"
         description="Discutons plus en détails de vos idées."
       />
-      <Card className="flex justify-between items-center w-full p-20 bg-textLight">
+      <Card className="flex justify-between items-center w-full p-20 bg-light">
         <h2 className="text-3xl font-bold">Un nouveau projet ?</h2>
         <p className="text-center text-lg">
           Mon travail vous intéresse? <br /> N’hésitez pas à me contacter 😃
         </p>
-        <Button label="d.xavero@hotmail.com" Icon={<PiPaperPlaneTilt />} />
+        <Button
+          label="d.xavero@hotmail.com"
+          href="mailto:d.xavero@hotmail.com"
+          Icon={<PiPaperPlaneTilt />}
+        />
       </Card>
     </Section>
   );
