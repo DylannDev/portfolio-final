@@ -13,16 +13,15 @@ export default function Hero() {
     <div className="flex h-[100dvh]">
       <div className="flex w-full items-center justify-between">
         <div className="flex flex-col w-1/2 gap-5">
-          <h1 className="font-light text-xl -mb-5">
-            Hello 👋🏻, je suis{" "}
-            <span className="font-semibold">Dylann Xavero</span>
+          <h1 className="text-xl -mb-5">
+            Hello 👋🏻, je suis <span className="font-bold">Dylann Xavero</span>
           </h1>
           <h1 className="font-extrabold text-[5rem] leading-[1.15] ">
             <span className="text-primary">Développeur</span> <br />
             <span className="whitespace-nowrap">Front-End</span>
             <span className="text-secondary">.</span>
           </h1>
-          <h2 className="text-xl font-light">
+          <h2 className="text-xl">
             Créateur d'expériences web captivantes et intuitives, <br />
             je transforme vos ambitions digitales en réalité.
           </h2>
@@ -40,7 +39,7 @@ export default function Hero() {
         <div className="flex justify-end w-1/2">
           <div className="grid place-content-center w-[500px] h-[500px] rounded-full border-[1px] border-slate-200 ">
             <img
-              className="rounded-full w-[400px] shadow-md"
+              className="rounded-full w-[400px]"
               src="public/images/portrait-dylann-carré-ai.png"
               alt="portrait dylann xavero"
             />

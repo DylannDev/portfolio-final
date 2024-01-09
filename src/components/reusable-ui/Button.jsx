@@ -11,7 +11,7 @@ export default function Button({
   return (
     <a
       className={`flex items-center justify-center gap-2 rounded-full px-4 py-3 active:bg-primaryDark hover:bg-transparent 
-      border-[1px] text-light font-light transition-all duration-300 cursor-pointer shadow-md ${
+      border-[1px] text-light transition-all duration-300 cursor-pointer shadow-md ${
         variant !== "normal"
           ? "bg-dark border-dark  hover:text-dark"
           : "bg-primary border-primary  hover:text-primary"
