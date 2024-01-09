@@ -4,7 +4,7 @@ import { NavbarLinksData } from "../../../../NavbarLinksData/NavbarLinksData";
 
 export default function NavbarLinks() {
   return (
-    <div className="flex gap-3">
+    <nav className="flex gap-3">
       {NavbarLinksData.map((link, index) => (
         <Link
           key={index}
@@ -14,6 +14,6 @@ export default function NavbarLinks() {
           <Title label={link.label} size="text-2xl" />
         </Link>
       ))}
-    </div>
+    </nav>
   );
 }
