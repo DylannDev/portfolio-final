@@ -1,29 +1,49 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import Badge from "../../reusable-ui/Badge";
 import Button from "../../reusable-ui/Button";
-import { PiPaperPlaneTilt } from "react-icons/pi";
+import { PiCode, PiFileArrowDown } from "react-icons/pi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import SocialIcon from "../../reusable-ui/SocialIcon";
+import ExternalLink from "./WorkSection/ExternalLink";
+import CvDevweb from "../../../../public/cv-dylann-xavero-devweb-2024.pdf";
 
 export default function Hero() {
   return (
-    <div className="flex items-center justify-center h-[100dvh]">
-      <div className="flex items-center gap-20">
-        <img
-          className="rounded-full w-[350px] shadow-md"
-          src="public/images/portrait-dylann-carré.jpg"
-          alt="portrait dylann xavero"
-        />
-        <div className="flex flex-col items-center justify-center gap-6 w-[350px] h-[350px]">
-          <p className="font-bold text-lg text-slate-600 ">Hello, je suis</p>
-          <h1 className="font-extrabold text-4xl leading-6">Dylann Xavero</h1>
-          <p className="font-extrabold text-3xl text-slate-600  ">
-            Dev Front-End React
-          </p>
-          <Button Icon={<PiPaperPlaneTilt />} label="Contactez-moi" />
-          <div className="flex items-center gap-3">
-            <SocialIcon Icon={<FaGithub />} size="text-3xl" />
-            <SocialIcon Icon={<FaLinkedinIn />} size="text-3xl" />
+    <div className="flex h-[100dvh]">
+      <div className="flex w-full items-center justify-between">
+        <div className="flex flex-col w-1/2 gap-5">
+          <h1 className="font-light text-xl -mb-5">
+            Hello 👋🏻, je suis{" "}
+            <span className="font-semibold">Dylann Xavero</span>
+          </h1>
+          <h1 className="font-extrabold text-[5rem] leading-[1.15] ">
+            <span className="text-primary">Développeur</span> <br />
+            <span className="whitespace-nowrap">Front-End</span>
+            <span className="text-secondary">.</span>
+          </h1>
+          <h2 className="text-xl font-light">
+            Créateur d'expériences web captivantes et intuitives, <br />
+            je transforme vos ambitions digitales en réalité.
+          </h2>
+          <div className="flex gap-2">
+            <Button
+              Icon={<PiFileArrowDown />}
+              label="Voir mon CV"
+              variant="dark"
+              href={CvDevweb}
+              target="_blank"
+            />
+            <Button Icon={<PiCode />} label="Mes Projets" href="/work" />
+          </div>
+        </div>
+        <div className="flex justify-end w-1/2">
+          <div className="grid place-content-center w-[500px] h-[500px] rounded-full border-[1px] border-slate-200 ">
+            <img
+              className="rounded-full w-[400px] shadow-md"
+              src="public/images/portrait-dylann-carré-ai.png"
+              alt="portrait dylann xavero"
+            />
           </div>
         </div>
       </div>
