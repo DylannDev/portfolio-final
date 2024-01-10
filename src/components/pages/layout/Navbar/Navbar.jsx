@@ -2,6 +2,7 @@ import NavbarLinks from "./NavbarLinks";
 import Logo from "../../../reusable-ui/Logo";
 import SocialIcon from "../../../reusable-ui/SocialIcon";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import ToggleButton from "./ToggleButton";
 
 export default function Navbar() {
   return (
@@ -11,6 +12,7 @@ export default function Navbar() {
       <div className="flex items-center gap-3">
         <SocialIcon Icon={<FaGithub />} size="text-2xl" />
         <SocialIcon Icon={<FaLinkedinIn />} size="text-2xl" />
+        <ToggleButton />
       </div>
     </header>
   );

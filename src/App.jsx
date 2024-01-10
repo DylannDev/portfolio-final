@@ -3,8 +3,11 @@ import Home from "./components/pages/home/Home";
 import WorkPage from "./components/pages/work/WorkPage.jsx";
 import ErrorPage from "./components/pages/error/ErrorPage";
 import Layout from "./components/pages/layout/Layout.jsx";
+import { useContext } from "react";
+import { DarkModeContext } from "./context/DarkModeProvider.jsx";
 
 function App() {
+  const { darkMode } = useContext(DarkModeContext);
   const router = createBrowserRouter([
     {
       element: <Layout />,
@@ -22,7 +25,11 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <div className={`${darkMode && "dark-theme"}`}>
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;

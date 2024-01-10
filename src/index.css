@@ -8,3 +8,7 @@
   font-weight: 400;
   color: #1e293b;
 }
+
+.dark-theme {
+  @apply bg-dark text-light;
+}
