@@ -10,6 +10,7 @@ export default {
         primaryShade1: "#858BFF",
         primaryDark: "#4751FF",
         secondary: "#5ceab9",
+        secondaryDark: "#1CD997",
         secondaryLight: "#EDFDF7",
         tertiary: "#ef4270",
         primaryLight: "#EBECFF",
