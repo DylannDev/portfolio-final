@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/DarkModeProvider";
+
 /* eslint-disable react/prop-types */
 export default function Button({
   Icon,
@@ -8,13 +11,13 @@ export default function Button({
   onClick,
   variant = "normal",
 }) {
+  const { darkButton, normalButton } = useContext(DarkModeContext);
+
   return (
     <a
-      className={`flex items-center justify-center gap-2 rounded-full px-4 py-3 active:bg-primaryDark hover:bg-transparent 
-      border-[1px] text-light transition-all duration-300 cursor-pointer shadow-md ${
-        variant !== "normal"
-          ? "bg-dark border-dark  hover:text-dark"
-          : "bg-primary border-primary  hover:text-primary"
+      className={`flex items-center justify-center gap-2 rounded-full px-4 py-3 active:text-light hover:bg-transparent 
+      border-[1px] transition-all duration-300 cursor-pointer shadow-md ${
+        variant === "normal" ? normalButton : darkButton
       }`}
       href={href}
       download={download}
