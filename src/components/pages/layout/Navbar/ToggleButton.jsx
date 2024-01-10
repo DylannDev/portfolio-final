@@ -8,7 +8,9 @@ export default function ToggleButton() {
   return (
     <div
       onClick={toggleDarkMode}
-      className="ml-3 p-1 bg-dark rounded-full text-light cursor-pointer text-2xl"
+      className={`ml-3 p-1 rounded-full cursor-pointer text-2xl hover:bg-primary transition-all duration-300 ${
+        darkMode ? "bg-light text-dark hover:text-light" : "bg-dark text-light"
+      }`}
     >
       {darkMode ? <PiSun /> : <PiMoon />}
     </div>
