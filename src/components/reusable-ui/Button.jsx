@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { DarkModeContext } from "../../context/DarkModeProvider";
+import { DarkModeContext } from "../../context/DarkModeContext";
 
 /* eslint-disable react/prop-types */
 export default function Button({

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { PiMoon, PiSun } from "react-icons/pi";
-import { DarkModeContext } from "../../../../context/DarkModeProvider";
+import { DarkModeContext } from "../../../../context/DarkModeContext";
 
 export default function ToggleButton() {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);

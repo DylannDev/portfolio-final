@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { DarkModeContext } from "../../../context/DarkModeProvider";
+import { DarkModeContext } from "../../../context/DarkModeContext";
 import Button from "../../reusable-ui/Button";
 import Card from "../../reusable-ui/Card";
 import Section from "../../reusable-ui/Section";

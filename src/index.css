@@ -10,5 +10,5 @@
 }
 
 .dark-theme {
-  @apply bg-dark text-light;
+  @apply bg-dark text-light transition-all duration-300 fill-white;
 }
