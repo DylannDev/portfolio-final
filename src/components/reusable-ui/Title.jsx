@@ -6,9 +6,9 @@ export default function Title({ size, label, description }) {
         size ? size : "text-4xl mb-16"
       }`}
     >
-      <div className="font-extrabold">
+      <div className="flex justify-center font-extrabold">
         <span className="text-primary">/</span>
-        {label}
+        <h2>{label}</h2>
         <span className="text-secondary">.</span>
       </div>
       {description && <p className="text-lg">{description}</p>}
