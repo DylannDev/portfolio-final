@@ -5,6 +5,8 @@ import ErrorPage from "./components/pages/error/ErrorPage";
 import Layout from "./components/pages/layout/Layout.jsx";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/DarkModeContext.jsx";
+import About from "./components/pages/about/about.jsx";
+import Project from "./components/pages/work/Projects/Project.jsx";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -20,6 +22,14 @@ function App() {
         {
           path: "/work",
           element: <WorkPage />,
+        },
+        {
+          path: "/work/:id",
+          element: <Project />,
+        },
+        {
+          path: "/about",
+          element: <About />,
         },
       ],
     },
