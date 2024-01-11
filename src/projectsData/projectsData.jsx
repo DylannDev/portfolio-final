@@ -13,10 +13,7 @@ import {
 
 export const projectsData = [
   {
-    image: {
-      src: <LogoCrustyPizza />,
-      alt: "logo crusty pizza",
-    },
+    logo: <LogoCrustyPizza />,
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos obcaecati quo necessitatibus, a illo fuga.",
     badges: [REACT, STYLEDCOMPONENTS, FIREBASE],
@@ -26,10 +23,7 @@ export const projectsData = [
     },
   },
   {
-    image: {
-      src: <LogoVroom />,
-      alt: "logo vroom",
-    },
+    logo: <LogoVroom />,
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos obcaecati quo necessitatibus, a illo fuga.",
     badges: [REACT, NEXT, TAILWIND],
@@ -39,16 +33,23 @@ export const projectsData = [
     },
   },
   {
-    image: {
-      src: <LogoDisneyPlus />,
-      alt: "logo disney plus",
-    },
+    logo: <LogoDisneyPlus />,
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos obcaecati quo necessitatibus, a illo fuga.",
     badges: [REACT, NEXT, FIREBASE],
     links: {
       github: "https://github.com/DylannDev/disney-plus-clone",
       demo: "https://disneyplus-dylanndev.vercel.app/",
+    },
+  },
+  {
+    logo: <LogoVroom />,
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos obcaecati quo necessitatibus, a illo fuga.",
+    badges: [REACT, TAILWIND],
+    links: {
+      github: "https://github.com/DylannDev/vroom-car-rental",
+      demo: "https://vroom-car-rental.vercel.app/",
     },
   },
 ];
