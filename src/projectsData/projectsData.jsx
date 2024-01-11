@@ -4,6 +4,11 @@ import LogoCrustyPizza from "../components/reusable-ui/svg/LogoCrustyPizza";
 import LogoDisneyPlus from "../components/reusable-ui/svg/LogoDisneyPlus";
 import LogoVroom from "../components/reusable-ui/svg/LogoVroom";
 import {
+  crustyDescription,
+  disneyDescription,
+  vroomDescription,
+} from "./projectsDescription";
+import {
   FIREBASE,
   NEXT,
   REACT,
@@ -13,9 +18,15 @@ import {
 
 export const projectsData = [
   {
+    id: "crusty-pizza",
+    name: "Crusty Pizza",
+    images: "projet-crusty-pizza.png",
     logo: <LogoCrustyPizza />,
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos obcaecati quo necessitatibus, a illo fuga.",
+    shortDescription: "Plateforme de commandes de pizzas 🍕",
+    description: {
+      header: crustyDescription.header,
+      features: crustyDescription.features,
+    },
     badges: [REACT, STYLEDCOMPONENTS, FIREBASE],
     links: {
       github: "https://github.com/DylannDev/crusty-pizza",
@@ -23,9 +34,15 @@ export const projectsData = [
     },
   },
   {
+    id: "vroom",
+    name: "Vroom - Agence de Location",
+    images: "projet-vroom.png",
     logo: <LogoVroom />,
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos obcaecati quo necessitatibus, a illo fuga.",
+    shortDescription: "Plateforme de location de véhicules 🚘",
+    description: {
+      header: vroomDescription.header,
+      features: vroomDescription.features,
+    },
     badges: [REACT, NEXT, TAILWIND],
     links: {
       github: "https://github.com/DylannDev/vroom-car-rental",
@@ -33,9 +50,16 @@ export const projectsData = [
     },
   },
   {
+    id: "disney-plus-clone",
+    name: "Disney + (Clone)",
+    images: "projet-disney.png",
     logo: <LogoDisneyPlus />,
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos obcaecati quo necessitatibus, a illo fuga.",
+    shortDescription:
+      "La célèbre plateforme de streaming recréée par moi-même.",
+    description: {
+      header: disneyDescription.header,
+      features: disneyDescription.features,
+    },
     badges: [REACT, NEXT, FIREBASE],
     links: {
       github: "https://github.com/DylannDev/disney-plus-clone",
@@ -43,9 +67,16 @@ export const projectsData = [
     },
   },
   {
+    id: "portfolio",
+    name: "Portfolio | Dylann Xavero",
+    images: "computer-background.jpg",
     logo: <LogoVroom />,
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos obcaecati quo necessitatibus, a illo fuga.",
+    shortDescription:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description: {
+      header: vroomDescription.header,
+      features: vroomDescription.features,
+    },
     badges: [REACT, TAILWIND],
     links: {
       github: "https://github.com/DylannDev/vroom-car-rental",
