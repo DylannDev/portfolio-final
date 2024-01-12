@@ -11,6 +11,8 @@ export default function Work() {
 
   const location = useLocation();
 
+  const homePageActive = location.pathname === "/";
+
   return (
     <Section
       className="flex flex-col justify-center items-center"
@@ -19,20 +21,18 @@ export default function Work() {
       <Title
         label="Work"
         description={
-          location.pathname === "/"
+          homePageActive
             ? "Voici un aperçu derniers projets que j'ai pu réaliser."
             : "Quelques projets sur lesquels j'ai pris plaisir à travailler."
         }
       />
       <div
         className={`grid justify-items-center gap-8 ${
-          location.pathname === "/"
-            ? "grid-cols-3"
-            : "grid-cols-2 max-w-[750px]"
+          homePageActive ? "grid-cols-3" : "grid-cols-2 max-w-[750px]"
         }`}
       >
         {projectsData.map((project, index) =>
-          location.pathname === "/" ? (
+          homePageActive ? (
             index < 3 && (
               <ProjectCard key={index} project={project} darkMode={darkMode} />
             )
