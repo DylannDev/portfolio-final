@@ -6,7 +6,7 @@ export default function SkillsCard({ skill }) {
   return (
     <Card>
       <h2 className="mb-6 font-bold text-2xl text-primary">{skill[0]}</h2>
-      <ul className="text-lg flex flex-col gap-2">
+      <ul className="text-lg flex flex-col gap-2 min-w-[214px] ">
         {skill[1].map((skillTechno, index) => (
           <SkillsLi key={index} {...skillTechno} />
         ))}

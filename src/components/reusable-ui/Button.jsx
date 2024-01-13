@@ -16,7 +16,7 @@ export default function Button({
   return (
     <a
       className={`flex items-center justify-center gap-2 rounded-full px-4 py-3 active:text-light hover:bg-transparent 
-      border-[1px] transition-all duration-300 cursor-pointer shadow-md ${
+      border-[1px] transition-all duration-300 cursor-pointer shadow-md w-fit ${
         variant === "normal" ? normalButton : darkButton
       }`}
       href={href}

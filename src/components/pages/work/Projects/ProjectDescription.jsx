@@ -9,13 +9,13 @@ export default function ProjectDescription({ selectedProject }) {
         alt="computer background"
         className="max-w-3xl rounded-3xl mb-12"
       />
-      <TitleProjects size="text-3xl" label="Note d'intention" />
-      <div className="flex flex-col gap-3 text-justify pb-4">
+      <TitleProjects size="text-4xl" label="Note d'intention" />
+      <div className="flex flex-col gap-3 text-justify pb-4 text-lg">
         {selectedProject.description.header}
       </div>
       <div>
-        <TitleProjects size="text-3xl" label="Features" />
-        <ul className="list-disc py-4 px-10">
+        <TitleProjects size="text-4xl" label="Features" />
+        <ul className="list-disc py-4 px-10 text-lg">
           {selectedProject.description.features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}
