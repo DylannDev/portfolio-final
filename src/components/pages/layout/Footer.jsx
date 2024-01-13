@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 import SocialIcon from "../../reusable-ui/SocialIcon";
-import { socialIconData } from "../../../socialIconData/socialIconData";
+import { socialIconData } from "../../../data/socialIconData/socialIconData";
 
 export default function Footer() {
   const date = new Date();

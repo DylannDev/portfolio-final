@@ -1,10 +1,10 @@
 import Section from "../../../reusable-ui/Section";
 import Title from "../../../reusable-ui/Title";
-import { projectsData } from "../../../../projectsData/projectsData";
 import { DarkModeContext } from "../../../../context/DarkModeContext";
 import { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
+import { projectsData } from "../../../../data/projectsData/projectsData";
 
 export default function Work() {
   const { darkMode } = useContext(DarkModeContext);
@@ -22,7 +22,7 @@ export default function Work() {
         label="Work"
         description={
           homePageActive
-            ? "Voici un aperçu derniers projets que j'ai pu réaliser."
+            ? "Voici un aperçu des derniers projets que j'ai pu réaliser."
             : "Quelques projets sur lesquels j'ai pris plaisir à travailler."
         }
       />

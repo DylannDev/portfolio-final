@@ -1,8 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
-
-import LogoCrustyPizza from "../components/reusable-ui/svg/LogoCrustyPizza";
-import LogoDisneyPlus from "../components/reusable-ui/svg/LogoDisneyPlus";
-import LogoVroom from "../components/reusable-ui/svg/LogoVroom";
+import LogoCrustyPizza from "../../components/reusable-ui/svg/LogoCrustyPizza";
+import LogoDisneyPlus from "../../components/reusable-ui/svg/LogoDisneyPlus";
+import LogoVroom from "../../components/reusable-ui/svg/LogoVroom";
 import {
   crustyDescription,
   disneyDescription,

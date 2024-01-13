@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Title from "../../../reusable-ui/Title";
-import { NavbarLinksData } from "../../../../NavbarLinksData/NavbarLinksData";
+import { NavbarLinksData } from "../../../../data/NavbarLinksData/NavbarLinksData";
 
 export default function NavbarLinks() {
   return (

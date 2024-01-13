@@ -1,6 +1,6 @@
 import Title from "../../../reusable-ui/Title";
 import SkillsCard from "./SkillsCard";
-import { skillsData } from "../../../../SkillsData/skillsData";
+import { skillsData } from "../../../../data/SkillsData/skillsData";
 import Section from "../../../reusable-ui/Section";
 
 export default function Skills() {
