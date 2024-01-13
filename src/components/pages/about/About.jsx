@@ -5,8 +5,7 @@ import Section from "../../reusable-ui/Section";
 import Title from "../../reusable-ui/Title";
 import TitleProjects from "../../reusable-ui/TitleProjects";
 import CvDevweb from "/public/cv-dylann-xavero-devweb-2024.pdf";
-import Card from "../../reusable-ui/Card";
-import { softSkillsData } from "../../../data/softSkillsData/softSkillsData";
+import SoftSkillsSection from "../home/SoftSkillsSection/SoftSkillsSection";
 
 export default function About() {
   return (
@@ -72,29 +71,7 @@ export default function About() {
         </Section>
       </div>
       <hr />
-      <Section className="mt-20">
-        <Title
-          label="Soft-Skills"
-          description="Zoom sur mes qualités de développeur front-end."
-          className="mb-6"
-        />
-        <div className="flex gap-4 text-center">
-          {softSkillsData.map((skill, index) => (
-            <Card
-              key={index}
-              className="hover:scale-105 transition-all p-8 flex flex-col gap-3"
-            >
-              <div className="min-h-[131px] flex items-center">
-                <img src={skill.img} alt="illustration des qualités" />
-              </div>
-              <h3 className="font-extrabold text-xl capitalize">
-                {skill.quality}
-              </h3>
-              <p>{skill.description}</p>
-            </Card>
-          ))}
-        </div>
-      </Section>
+      <SoftSkillsSection />
     </>
   );
 }
