@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
-export default function Title({ size, label, description }) {
+export default function Title({ className, label, description }) {
   return (
     <div
-      className={`flex flex-col gap-4 text-center ${
-        size ? size : "text-4xl mb-16"
+      className={`flex flex-col gap-2 ${
+        className ? className : "text-4xl mb-20 text-center"
       }`}
     >
-      <div className="flex justify-center font-extrabold">
+      <h2 className="font-extrabold">
         <span className="text-primary">/</span>
-        <h2>{label}</h2>
+        <span>{label}</span>
         <span className="text-secondary">.</span>
-      </div>
-      {description && <p className="text-lg">{description}</p>}
+      </h2>
+      {description && <p className="text-xl">{description}</p>}
     </div>
   );
 }

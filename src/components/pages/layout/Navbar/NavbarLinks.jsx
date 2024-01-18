@@ -11,7 +11,7 @@ export default function NavbarLinks() {
           to={link.to}
           className="hover:underline underline-offset-8"
         >
-          <Title label={link.label} size="text-2xl" />
+          <Title label={link.label} className="text-2xl" />
         </Link>
       ))}
     </nav>

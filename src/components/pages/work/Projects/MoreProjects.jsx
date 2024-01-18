@@ -3,14 +3,14 @@ import { useContext } from "react";
 import { DarkModeContext } from "../../../../context/DarkModeContext";
 import { projectsData } from "../../../../data/projectsData/projectsData";
 import Section from "../../../reusable-ui/Section";
-import TitleProjects from "../../../reusable-ui/TitleProjects";
 import ProjectCard from "../../home/WorkSection/ProjectCard";
+import Title from "../../../reusable-ui/Title";
 
 export default function MoreProjects({ id }) {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <Section variant="large" className="flex flex-col gap-16">
-      <TitleProjects
+    <Section variant="large" className="flex flex-col">
+      <Title
         label="More Work"
         description="Quelques projets sur lesquels j'ai travaillé"
         size="text-4xl"
