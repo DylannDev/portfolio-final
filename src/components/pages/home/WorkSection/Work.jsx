@@ -14,10 +14,7 @@ export default function Work() {
   const homePageActive = location.pathname === "/";
 
   return (
-    <Section
-      className="flex flex-col justify-center items-center"
-      variant="large"
-    >
+    <Section className="flex flex-col justify-center" variant="large">
       <Title
         label="Work"
         description={
@@ -26,6 +23,9 @@ export default function Work() {
             : "Quelques projets sur lesquels j'ai pris plaisir à travailler."
         }
       />
+      <div className="flex mb-6">
+        <p>Cliquez sur les cartes pour en savoir plus.</p>
+      </div>
       <div
         className={`grid justify-items-center gap-8 ${
           homePageActive ? "grid-cols-3" : "grid-cols-2 max-w-[750px]"
