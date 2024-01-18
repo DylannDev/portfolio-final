@@ -14,10 +14,10 @@ export default function TextHero() {
         <span className="whitespace-nowrap">Front-End</span>
         <span className="text-secondary">.</span>
       </h1>
-      <h2 className="text-xl">
+      <p className="text-xl">
         Créateur d'expériences web captivantes et intuitives, <br />
         je transforme vos ambitions digitales en réalité.
-      </h2>
+      </p>
       <div className="flex gap-2">
         <Button
           Icon={<PiFileArrowDown />}
