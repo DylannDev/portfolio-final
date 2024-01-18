@@ -35,7 +35,12 @@ export default function TextAbout() {
           Besoin d'en savoir plus sur mon parcours ? <br />
           Téléchargez mon CV en ligne.
         </p>
-        <Button Icon={<PiFileArrowDown />} label="Voir mon CV" to={CvDevweb} />
+        <Button
+          Icon={<PiFileArrowDown />}
+          label="Voir mon CV"
+          href={CvDevweb}
+          target="_blank"
+        />
       </div>
     </>
   );

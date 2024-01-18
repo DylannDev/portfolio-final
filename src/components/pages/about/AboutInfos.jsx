@@ -9,7 +9,6 @@ export default function AboutInfos() {
         <Title
           label="About Me"
           description="Découvrez en plus sur moi et mon parcours."
-          className="text-center"
         />
         <img
           src="/images/computer-background.jpg"
