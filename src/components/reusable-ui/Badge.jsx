@@ -1,12 +1,13 @@
+import { getShortenedLabel } from "../../utils/array";
+
 /* eslint-disable react/prop-types */
-import { useLocation } from "react-router-dom";
-
-export default function Badge({ Icon, label, className }) {
-  const location = useLocation();
-
-  const projectPageActive = location.pathname.includes("/work/");
-  const shortenLabel =
-    label.length > 8 ? label.slice(0, 6).concat("...") : label;
+export default function Badge({
+  Icon,
+  label,
+  className,
+  shortenLabel = false,
+}) {
+  const labelShortened = getShortenedLabel(label);
 
   return (
     <div
@@ -16,7 +17,7 @@ export default function Badge({ Icon, label, className }) {
     >
       {Icon && <div className="text-xl">{Icon}</div>}
       <span className={`whitespace-nowrap`}>
-        {projectPageActive ? label : shortenLabel}
+        {shortenLabel ? labelShortened : label}
       </span>
     </div>
   );

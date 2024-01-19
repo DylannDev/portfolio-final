@@ -19,7 +19,12 @@ export default function MoreProjects({ id }) {
         {projectsData.map(
           (project, index) =>
             project.id !== id && (
-              <ProjectCard key={index} project={project} darkMode={darkMode} />
+              <ProjectCard
+                key={index}
+                project={project}
+                darkMode={darkMode}
+                shortenLabel={true}
+              />
             )
         )}
       </div>
