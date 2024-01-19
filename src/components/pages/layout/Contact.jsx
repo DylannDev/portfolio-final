@@ -11,7 +11,7 @@ export default function Contact() {
     <Section className="absolute z-10 left-0 right-0 bottom-52">
       <Card
         className={`flex justify-between items-center w-full py-20 px-16 ${
-          darkMode ? "bg-dark" : "bg-light"
+          darkMode ? "bg-slate-900" : "bg-light"
         }`}
       >
         <h2 className="text-3xl font-extrabold">Un nouveau projet ?</h2>
