@@ -1,14 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import { PiFileArrowDown } from "react-icons/pi";
-import Button from "../../reusable-ui/Button";
-import CvDevweb from "/public/cv-dylann-xavero-devweb-2024.pdf";
-import TitleProjects from "../../reusable-ui/TitleProjects";
+import Title from "../../reusable-ui/Title";
 
 export default function TextAbout() {
   return (
     <>
-      <TitleProjects size="text-4xl" label="Background" className="mb-6" />
-      <div className="flex flex-col gap-6 text-justify pb-4 text-lg mb-12">
+      <Title className="text-4xl mb-6" label="Background" />
+      <div className="flex flex-col gap-6 text-justify text-lg">
         <p>
           Actuellement en reconversion professionnelle, je me suis pris de
           passion pour la conception de sites web après mes études. Le fait de
@@ -29,18 +26,6 @@ export default function TextAbout() {
           passionnantes. N'hésitez pas à me contacter pour discuter de votre
           projet ou simplement pour échanger sur le monde du développement web.
         </p>
-      </div>
-      <div className="flex justify-between">
-        <p className="text-xl font-bold pr-4">
-          Besoin d'en savoir plus sur mon parcours ? <br />
-          Téléchargez mon CV en ligne.
-        </p>
-        <Button
-          Icon={<PiFileArrowDown />}
-          label="Voir mon CV"
-          href={CvDevweb}
-          target="_blank"
-        />
       </div>
     </>
   );
