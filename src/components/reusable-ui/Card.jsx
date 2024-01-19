@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
-export default function Card({ children, className }) {
+export default function Card({ children, className, onClick }) {
   return (
     <div
-      className={`border-[1px] border-slate-200 rounded-3xl  min-w-[280px] shadow-md ${
-        className ? className : "max-w-[350px] p-8"
+      onClick={onClick}
+      className={`border-[1px] border-slate-200 rounded-3xl ${
+        className ? className : "p-8"
       }`}
     >
       {children}

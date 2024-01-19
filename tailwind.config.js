@@ -4,12 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        textDark: "#1e293b",
-        textLight: "#FFFFFF",
+        dark: "#1e293b",
+        light: "#FFFFFF",
         primary: "#646cff",
-        primaryLight: "#858BFF",
+        primaryShade1: "#858BFF",
         primaryDark: "#4751FF",
         secondary: "#5ceab9",
+        secondaryDark: "#1CD997",
         secondaryLight: "#EDFDF7",
         tertiary: "#ef4270",
         primaryLight: "#EBECFF",

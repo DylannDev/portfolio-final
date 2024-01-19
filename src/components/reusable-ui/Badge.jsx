@@ -1,9 +1,24 @@
+import { getShortenedLabel } from "../../utils/array";
+
 /* eslint-disable react/prop-types */
-export default function Badge({ Icon, label }) {
+export default function Badge({
+  Icon,
+  label,
+  className,
+  shortenLabel = false,
+}) {
+  const labelShortened = getShortenedLabel(label);
+
   return (
-    <div className="flex items-center gap-2 rounded-full px-3 py-1 bg-secondary  text-textDark  text-xs font-semibold   ">
+    <div
+      className={`flex w-fit items-center gap-2 rounded-full px-3 py-1 bg-secondary text-dark font-semibold ${
+        className ? className : "text-xs"
+      }`}
+    >
       {Icon && <div className="text-xl">{Icon}</div>}
-      <span>{label}</span>
+      <span className={`whitespace-nowrap`}>
+        {shortenLabel ? labelShortened : label}
+      </span>
     </div>
   );
 }

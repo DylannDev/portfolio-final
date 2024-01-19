@@ -1,13 +1,31 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/DarkModeContext";
+import { Link } from "react-router-dom";
+
 /* eslint-disable react/prop-types */
-export default function Button({ Icon, label }) {
+export default function Button({
+  Icon,
+  label,
+  href,
+  target,
+  onClick,
+  variant = "normal",
+}) {
+  const { darkButton, normalButton } = useContext(DarkModeContext);
+
   return (
-    <a
-      className="flex items-center justify-center gap-2 rounded-full px-4 py-2 bg-primary active:bg-primaryDark 
-        hover:shadow-lg text-textLight shadow-md font-medium text-md"
-      href="mailto:d.xavero@hotmail.com"
+    <Link
+      className={`flex items-center justify-center gap-2 rounded-full px-5 py-3 active:text-light hover:bg-transparent 
+      border-[1px] transition-all duration-300 cursor-pointer shadow-md w-fit ${
+        variant === "normal" ? normalButton : darkButton
+      }`}
+      to={href}
+      target={target}
+      rel="noreferrer"
+      onClick={onClick}
     >
       {Icon && <div className="text-xl">{Icon}</div>}
       <span className="">{label}</span>
-    </a>
+    </Link>
   );
 }
