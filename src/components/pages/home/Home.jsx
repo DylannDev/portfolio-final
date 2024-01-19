@@ -1,19 +1,21 @@
 import CustomerNeedsSection from "./CustomerNeedsSection/CustomerNeedsSection";
 import Hero from "./Hero/Hero";
-import QualitySection from "./QualitySection/QualitySection";
-import Work from "./WorkSection/Work";
-
+import ValuesSection from "./ValuesSection/ValuesSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import TestimonialsSection from "./TestimonialsSection/TestimonialsSection";
+import MainSkills from "./MainSkills/MainSkills";
+import ProjectAhead from "./ProjectAhead/ProjectAhead";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <hr />
-      <QualitySection />
+      <ValuesSection />
+      <MainSkills />
       <CustomerNeedsSection />
-      <Work />
+      <hr />
+      <ProjectAhead />
       <hr />
       <ServicesSection />
       <hr />
