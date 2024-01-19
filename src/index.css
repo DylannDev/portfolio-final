@@ -10,5 +10,9 @@
 }
 
 .dark-theme {
-  @apply bg-dark text-light transition-all duration-300 fill-white;
+  @apply bg-slate-900 text-light transition-all duration-300 fill-white;
+}
+
+.font-title {
+  font-family: "Inter";
 }
