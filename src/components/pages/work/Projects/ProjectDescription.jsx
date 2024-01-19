@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import TitleProjects from "../../../reusable-ui/TitleProjects";
+import Title from "../../../reusable-ui/Title";
 
 export default function ProjectDescription({ selectedProject }) {
   return (
@@ -9,17 +9,23 @@ export default function ProjectDescription({ selectedProject }) {
         alt="computer background"
         className="max-w-3xl rounded-3xl mb-12"
       />
-      <TitleProjects size="text-4xl" label="Note d'intention" />
+
+      <Title className="text-4xl" label="Mission" />
       <div className="flex flex-col gap-3 text-justify pb-4 text-lg">
         {selectedProject.description.header}
       </div>
       <div>
-        <TitleProjects size="text-4xl" label="Features" />
+        <Title className="text-4xl" label="Features" />
         <ul className="list-disc py-4 px-10 text-lg">
           {selectedProject.description.features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}
         </ul>
+      </div>
+      <div className="border-l-8 border-secondary">
+        <p className="text-xl pl-4">
+          <span className="font-bold">Nature du projet: </span>Personnel
+        </p>
       </div>
     </div>
   );
