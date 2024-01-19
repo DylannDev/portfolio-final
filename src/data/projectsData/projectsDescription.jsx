@@ -37,8 +37,6 @@ export const vroomDescription = {
 export const crustyDescription = {
   header: (
     <>
-      <p>🚧 Projet en cours 🚧</p>
-
       <p>
         Crusty Pizza est une plateforme de commande de pizzas au design moderne
         et aux fonctionnalités diverses. Vous pouvez dores et déjà consulter le
