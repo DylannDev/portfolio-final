@@ -1,36 +1,41 @@
+/* eslint-disable react/no-unescaped-entities */
 import Button from "../../../reusable-ui/Button";
 import Section from "../../../reusable-ui/Section";
-import { PiPlusCircle } from "react-icons/pi";
-import { MainSkillsData } from "../../../../data/SkillsData/skillsData";
-import Title from "../../../reusable-ui/Title";
 import { RxCheck } from "react-icons/rx";
+import { MainSkillsData } from "../../../../data/projectsData/variablesSkillsData";
+import Title from "../../../reusable-ui/Title";
 
 export default function CustomerNeedsSection() {
   return (
-    <Section variant="large" className="flex justify-between items-center">
+    <Section
+      variant="large"
+      className="flex justify-between items-center my-16"
+    >
       <div className="flex flex-col gap-4 w-1/2">
         <Title
           label="Vos besoins"
           description="Que pourrions-nous faire ensemble ?"
           className="text-4xl text-left"
         />
-        <p>
-          Je développe des projets web, quelles que soient leurs dimensions, de
-          la landing page à l’application web en passant par le SaaS, pour des
-          petites et moyennes entreprises. J’ai une aspiration certaine pour les
-          projets entrepreneuriaux innovants, et les méthodes agiles.
+        <p className="text-lg">
+          Je crée des projets web de toutes envergures, allant de simples
+          landing page à des applications web plus complexes, destinées
+          principalement aux petites et moyennes entreprises. J'ai un attrait
+          certain pour les projets novateurs, qui intègrent les méthodes agiles
+          afin d'assurer une flexibilité optimale dans le processus de
+          développement.
         </p>
         <div className="flex gap-2">
           {MainSkillsData.map((skill, index) => (
             <div key={index} className="flex items-center gap-[2px]">
               <RxCheck className="text-xl text-secondary animate-pulse" />
               <span className="text-sm font-bold whitespace-nowrap ">
-                {skill}
+                {skill.label}
               </span>
             </div>
           ))}
         </div>
-        <Button label="En savoir plus" Icon={<PiPlusCircle />} />
+        <Button label="En savoir plus" />
       </div>
 
       <img
