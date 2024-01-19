@@ -1,4 +1,4 @@
-export const NavbarLinksData = [
+export const navbarLinksData = [
   { label: "Home", to: "/" },
   { label: "Work", to: "/work" },
   { label: "Skills", to: "/skills" },
