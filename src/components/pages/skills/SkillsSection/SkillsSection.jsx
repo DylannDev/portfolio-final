@@ -8,6 +8,7 @@ export default function SkillsSection() {
     <>
       <Section className="pt-[25dvh] ">
         <Title
+          variant="section"
           label="Skills"
           description="Voici les technos sur lesquelles je suis à l'aise."
         />
