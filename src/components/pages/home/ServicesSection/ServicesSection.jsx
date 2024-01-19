@@ -1,42 +1,30 @@
 /* eslint-disable react/no-unescaped-entities */
-import { PiSealCheckFill } from "react-icons/pi";
-import Card from "../../../reusable-ui/Card";
 import Section from "../../../reusable-ui/Section";
-import { qualitySectionData } from "../../../../data/QualityData/qualitySectionData";
+import { servicesSectionData } from "../../../../data/servicesData/servicesData";
+import Title from "../../../reusable-ui/Title";
+import CallToAction from "./CallToAction";
+import ServicesCard from "./ServicesCard";
 
 export default function ServicesSection() {
   return (
-    <Section className="my-16">
-      <div className="">
-        <h2 className="font-extrabold text-4xl text-center mb-20 leading-tight">
-          Ce que nous pourrions réaliser ensemble
-          <span className="text-secondary ">.</span>
-        </h2>
+    <Section className="my-16" variant="large">
+      <h2 className="font-bold text-6xl text-center mb-24 leading-tight font-title">
+        Ce que nous pourrions <br /> réaliser ensemble
+        <span className="text-secondary ">.</span>
+      </h2>
+      <Title
+        label="Vous avez une vision, je suis là pour la
+        concrétiser"
+        description="En tant que développeur front-end, ma mission est de transformer des
+        concepts de design en interfaces interactives et performantes. Voici
+        comment je peux contribuer à votre projet :"
+        className="text-left text-2xl mb-16"
+        variant="hidden"
+      />
+      <div className="grid grid-cols-3 gap-6 text-center">
+        <ServicesCard services={servicesSectionData} />
       </div>
-      <div className="flex justify-between gap-6 text-center mb-12">
-        {qualitySectionData.map((quality, index) => (
-          <Card
-            key={index}
-            className="hover:scale-105 transition-all p-8 flex flex-col gap-3"
-          >
-            <div>
-              <div className="flex justify-center ">
-                <PiSealCheckFill className="text-5xl text-primary" />
-              </div>
-            </div>
-            <h3 className="font-extrabold text-xl capitalize">
-              {quality.quality}
-            </h3>
-            <p>{quality.description}</p>
-          </Card>
-        ))}
-      </div>
-      <p className="text-xl">
-        Fort d'une expérience en programmation informatique orienté web de plus
-        de 15 ans, mon domaine de compétence s'étend de la réalisation de
-        l'identité à l'optimisation de performance (référencement /
-        positionnement / vitesse d'affichage).
-      </p>
+      <CallToAction />
     </Section>
   );
 }
