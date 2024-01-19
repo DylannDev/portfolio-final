@@ -9,7 +9,7 @@ export default function TextHero() {
       <h1 className="text-xl -mb-5">
         Hello 👋🏻, je suis <span className="font-bold">Dylann Xavero</span>
       </h1>
-      <h1 className="font-extrabold text-[5rem] leading-[1.15] ">
+      <h1 className="font-bold text-[5rem] leading-[1.15] font-title">
         <span className="text-primary">Développeur</span> <br />
         <span className="whitespace-nowrap">Front-End</span>
         <span className="text-secondary">.</span>
