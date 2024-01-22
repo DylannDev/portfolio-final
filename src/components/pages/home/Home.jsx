@@ -8,7 +8,7 @@ import ProjectAhead from "./ProjectAhead/ProjectAhead";
 
 export default function Home() {
   return (
-    <>
+    <div className="fade-in">
       <Hero />
       <hr />
       <ValuesSection />
@@ -20,6 +20,6 @@ export default function Home() {
       <ServicesSection />
       <hr />
       <TestimonialsSection />
-    </>
+    </div>
   );
 }

@@ -10,7 +10,7 @@ import TextHero from "./TextHero";
 
 export default function Hero() {
   return (
-    <div className="flex pt-[30dvh] pb-[15dvh] ">
+    <div className="flex pt-[30dvh] pb-[15dvh]">
       <div className="flex w-full items-center justify-between">
         <TextHero />
         <ImageHero />
