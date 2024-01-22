@@ -17,7 +17,10 @@ export default function Work() {
         description="Quelques projets sur lesquels j'ai pris plaisir à travailler."
       />
       <div className="flex mb-6">
-        <p>Cliquez sur les cartes pour en savoir plus.</p>
+        <p>
+          Cliquez sur les cartes pour
+          <span className="font-bold"> en savoir plus</span>.
+        </p>
       </div>
       <div
         className={`grid gap-6  grid-cols-2 max-w-[750px]
