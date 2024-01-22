@@ -27,7 +27,7 @@ export default function ProjectAhead() {
         />
         <div className="pl-8 w-1/2 flex flex-col gap-4">
           <Title label={selectedProject.name} className="text-left text-3xl" />
-          {selectedProject.description.header}
+          {selectedProject.mediumDescription}
           <StackBadges project={selectedProject} />
           <ExternalLinks project={selectedProject} />
           <Button label="Consulter tous mes projets" href="/work" />

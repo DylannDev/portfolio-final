@@ -17,7 +17,7 @@ export default function ProjectCard({ project, darkMode, shortenLabel }) {
             {project.logo}
           </div>
         </div>
-        <div>{project.shortDescription}</div>
+        <div className="flex-1">{project.mediumDescription}</div>
         <StackBadges project={project} shortenLabel={shortenLabel} />
         <ExternalLinks project={project} />
       </div>
