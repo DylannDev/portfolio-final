@@ -5,8 +5,11 @@ import { findProjectById } from "../../../../utils/array";
 import ProjectDescription from "./ProjectDescription";
 import ProjectInfos from "./ProjectInfos";
 import MoreProjects from "./MoreProjects";
+import { useContext } from "react";
+import { DarkModeContext } from "../../../../context/DarkModeContext";
 
 export default function Project() {
+  const { portfolioImage } = useContext(DarkModeContext);
   const { id } = useParams();
 
   const selectedProject = findProjectById(projectsData, id);
@@ -16,7 +19,10 @@ export default function Project() {
       <Section className="flex justify-center pt-[30dvh]">
         <div className="max-w-3xl">
           <ProjectInfos selectedProject={selectedProject} />
-          <ProjectDescription selectedProject={selectedProject} />
+          <ProjectDescription
+            selectedProject={selectedProject}
+            portfolioImage={portfolioImage}
+          />
         </div>
       </Section>
       <hr />
