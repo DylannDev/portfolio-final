@@ -5,6 +5,7 @@ import LogoVroom from "../../components/reusable-ui/svg/LogoVroom";
 import {
   crustyDescription,
   disneyDescription,
+  portfolioDescription,
   vroomDescription,
 } from "./projectsDescription";
 import {
@@ -22,10 +23,13 @@ export const projectsData = [
     images: "projet-crusty-pizza.png",
     logo: <LogoCrustyPizza />,
     shortDescription: "Plateforme de commandes de pizzas 🍕",
+    mediumDescription:
+      "Application CRUD, contenant un panel admin permettant de créer, modifier ou supprimer un produit, ainsi que de sauvegarder le panier.",
     description: {
       header: crustyDescription.header,
       features: crustyDescription.features,
     },
+    isClientProject: false,
     badges: [REACT, STYLEDCOMPONENTS, FIREBASE],
     links: {
       github: "https://github.com/DylannDev/crusty-pizza",
@@ -38,10 +42,13 @@ export const projectsData = [
     images: "projet-vroom.png",
     logo: <LogoVroom />,
     shortDescription: "Plateforme de location de véhicules 🚘",
+    mediumDescription:
+      "Vroom est une plateforme de location de véhicules qui calcule le prix total en fonction de la durée de location.",
     description: {
       header: vroomDescription.header,
       features: vroomDescription.features,
     },
+    isClientProject: false,
     badges: [REACT, NEXT, TAILWIND],
     links: {
       github: "https://github.com/DylannDev/vroom-car-rental",
@@ -55,10 +62,13 @@ export const projectsData = [
     logo: <LogoDisneyPlus />,
     shortDescription:
       "La célèbre plateforme de streaming recréée par moi-même.",
+    mediumDescription:
+      "Reproduction de la plateforme de streaming et de quelques fonctionnalités.",
     description: {
       header: disneyDescription.header,
       features: disneyDescription.features,
     },
+    isClientProject: false,
     badges: [REACT, NEXT, FIREBASE],
     links: {
       github: "https://github.com/DylannDev/disney-plus-clone",
@@ -67,19 +77,21 @@ export const projectsData = [
   },
   {
     id: "portfolio",
-    name: "Portfolio | Dylann Xavero",
-    images: "computer-background.jpg",
+    name: "Portfolio Dylann Xavero",
+    images: "projet-portfolio-dark.png",
     logo: <LogoVroom />,
-    shortDescription:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    shortDescription: "Portfolio présentant mes différents projets",
+    mediumDescription:
+      "Réalisation de mon portfolio développé par mes soins, ayant pour objectif de présenter mes différents projets.",
     description: {
-      header: vroomDescription.header,
-      features: vroomDescription.features,
+      header: portfolioDescription.header,
+      features: portfolioDescription.features,
     },
+    isClientProject: false,
     badges: [REACT, TAILWIND],
     links: {
-      github: "https://github.com/DylannDev/vroom-car-rental",
-      demo: "https://vroom-car-rental.vercel.app/",
+      github: "https://github.com/DylannDev/portfolio-final",
+      demo: "https://www.dylann-dev.com/",
     },
   },
 ];
