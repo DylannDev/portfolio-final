@@ -7,6 +7,7 @@ import ProjectInfos from "./ProjectInfos";
 import MoreProjects from "./MoreProjects";
 import { useContext } from "react";
 import { DarkModeContext } from "../../../../context/DarkModeContext";
+import BackButton from "../../../reusable-ui/BackButton";
 
 export default function Project() {
   const { portfolioImage } = useContext(DarkModeContext);
@@ -16,6 +17,7 @@ export default function Project() {
 
   return (
     <>
+      <BackButton />
       <Section className="flex justify-center pt-[30dvh]">
         <div className="max-w-3xl">
           <ProjectInfos selectedProject={selectedProject} />
