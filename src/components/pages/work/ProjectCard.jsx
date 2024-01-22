@@ -2,7 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import Card from "../../reusable-ui/Card";
 import ExternalLinks from "../../reusable-ui/ExternalLinks";
-import StackBadges from "./StackBadges";
+import StackBadges from "../../reusable-ui/StackBadges";
 
 export default function ProjectCard({ project, darkMode, shortenLabel }) {
   const navigate = useNavigate();
