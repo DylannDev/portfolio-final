@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Badge from "../../../reusable-ui/Badge";
+import Badge from "../../reusable-ui/Badge";
 
 export default function StackBadges({ project, shortenLabel }) {
   return (

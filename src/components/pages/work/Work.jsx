@@ -1,10 +1,10 @@
-import Section from "../../../reusable-ui/Section";
-import Title from "../../../reusable-ui/Title";
-import { DarkModeContext } from "../../../../context/DarkModeContext";
+import Section from "../../reusable-ui/Section";
+import Title from "../../reusable-ui/Title";
+import { DarkModeContext } from "../../../context/DarkModeContext";
 import { useContext } from "react";
 import ProjectCard from "./ProjectCard";
-import { projectsData } from "../../../../data/projectsData/projectsData";
-import CallToAction from "../ServicesSection/CallToAction";
+import { projectsData } from "../../../data/projectsData/projectsData";
+import CallToAction from "../home/ServicesSection/CallToAction";
 
 export default function Work() {
   const { darkMode } = useContext(DarkModeContext);

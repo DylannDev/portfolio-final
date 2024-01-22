@@ -4,8 +4,8 @@ import Section from "../../../reusable-ui/Section";
 import Title from "../../../reusable-ui/Title";
 import { projectsData } from "../../../../data/projectsData/projectsData";
 import { findProjectById } from "../../../../utils/array";
-import StackBadges from "../WorkSection/StackBadges";
-import ExternalLinks from "../WorkSection/ExternalLinks";
+import StackBadges from "../../work/StackBadges";
+import ExternalLinks from "../../../reusable-ui/ExternalLinks";
 
 export default function ProjectAhead() {
   const navigate = useNavigate();

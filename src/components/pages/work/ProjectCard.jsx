@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
-import Card from "../../../reusable-ui/Card";
-import ExternalLinks from "./ExternalLinks";
+import Card from "../../reusable-ui/Card";
+import ExternalLinks from "../../reusable-ui/ExternalLinks";
 import StackBadges from "./StackBadges";
 
 export default function ProjectCard({ project, darkMode, shortenLabel }) {

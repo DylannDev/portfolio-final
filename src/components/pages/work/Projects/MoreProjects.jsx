@@ -3,8 +3,8 @@ import { useContext } from "react";
 import { DarkModeContext } from "../../../../context/DarkModeContext";
 import { projectsData } from "../../../../data/projectsData/projectsData";
 import Section from "../../../reusable-ui/Section";
-import ProjectCard from "../../home/WorkSection/ProjectCard";
 import Title from "../../../reusable-ui/Title";
+import ProjectCard from "../ProjectCard";
 
 export default function MoreProjects({ id }) {
   const { darkMode } = useContext(DarkModeContext);
