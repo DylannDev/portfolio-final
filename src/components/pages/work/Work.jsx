@@ -1,10 +1,9 @@
-import Section from "../../../reusable-ui/Section";
-import Title from "../../../reusable-ui/Title";
-import { DarkModeContext } from "../../../../context/DarkModeContext";
+import Section from "../../reusable-ui/Section";
+import Title from "../../reusable-ui/Title";
+import { DarkModeContext } from "../../../context/DarkModeContext";
 import { useContext } from "react";
 import ProjectCard from "./ProjectCard";
-import { projectsData } from "../../../../data/projectsData/projectsData";
-import CallToAction from "../ServicesSection/CallToAction";
+import { projectsData } from "../../../data/projectsData/projectsData";
 
 export default function Work() {
   const { darkMode } = useContext(DarkModeContext);
@@ -17,7 +16,10 @@ export default function Work() {
         description="Quelques projets sur lesquels j'ai pris plaisir à travailler."
       />
       <div className="flex mb-6">
-        <p>Cliquez sur les cartes pour en savoir plus.</p>
+        <p>
+          Cliquez sur les cartes pour
+          <span className="font-bold"> en savoir plus</span>.
+        </p>
       </div>
       <div
         className={`grid gap-6  grid-cols-2 max-w-[750px]
@@ -32,7 +34,6 @@ export default function Work() {
           />
         ))}
       </div>
-      <CallToAction />
     </Section>
   );
 }

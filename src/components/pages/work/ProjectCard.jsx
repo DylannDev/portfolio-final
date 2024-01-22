@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useNavigate } from "react-router-dom";
-import Card from "../../../reusable-ui/Card";
-import ExternalLinks from "./ExternalLinks";
-import StackBadges from "./StackBadges";
+import Card from "../../reusable-ui/Card";
+import ExternalLinks from "../../reusable-ui/ExternalLinks";
+import StackBadges from "../../reusable-ui/StackBadges";
 
 export default function ProjectCard({ project, darkMode, shortenLabel }) {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ export default function ProjectCard({ project, darkMode, shortenLabel }) {
             {project.logo}
           </div>
         </div>
-        <div>{project.shortDescription}</div>
+        <div className="flex-1">{project.mediumDescription}</div>
         <StackBadges project={project} shortenLabel={shortenLabel} />
         <ExternalLinks project={project} />
       </div>

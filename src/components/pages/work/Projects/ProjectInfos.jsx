@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
+import ExternalLinks from "../../../reusable-ui/ExternalLinks";
 import Title from "../../../reusable-ui/Title";
-import StackBadges from "../../home/WorkSection/StackBadges";
-import ExternalLinks from "../../home/WorkSection/ExternalLinks";
+import StackBadges from "../../../reusable-ui/StackBadges";
 
 export default function ProjectInfos({ selectedProject }) {
   return (

@@ -16,9 +16,20 @@ export const DarkModeProvider = ({ children }) => {
 
   const normalButton =
     "bg-primary text-light border-primary hover:text-primary active:bg-primaryDark";
+
+  const portfolioImage = darkMode
+    ? "projet-portfolio-white.png"
+    : "projet-portfolio-dark.png";
+
   return (
     <DarkModeContext.Provider
-      value={{ darkMode, toggleDarkMode, darkButton, normalButton }}
+      value={{
+        darkMode,
+        toggleDarkMode,
+        darkButton,
+        normalButton,
+        portfolioImage,
+      }}
     >
       {children}
     </DarkModeContext.Provider>

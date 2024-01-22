@@ -1,3 +1,16 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/DarkModeContext";
+import { useNavigate } from "react-router-dom";
+
 export default function Logo() {
-  return <div className="text-3xl font-bold">Dylann Dev.</div>;
+  const navigate = useNavigate();
+  const { darkMode } = useContext(DarkModeContext);
+  return (
+    <img
+      src={`/images/${darkMode ? "logo-dev-blanc.svg" : "logo-dev-black.svg"}`}
+      alt="Logo Dylann Dev"
+      className="w-[250px] cursor-pointer"
+      onClick={() => navigate("/")}
+    />
+  );
 }

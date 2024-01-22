@@ -1,15 +1,21 @@
 /* eslint-disable react/prop-types */
 import Title from "../../../reusable-ui/Title";
 
-export default function ProjectDescription({ selectedProject }) {
+export default function ProjectDescription({
+  selectedProject,
+  portfolioImage,
+}) {
   return (
     <div className="flex flex-col gap-4">
       <img
-        src={`/images/${selectedProject.images}`}
+        src={
+          selectedProject.id === "portfolio"
+            ? `/images/${portfolioImage}`
+            : `/images/${selectedProject.images}`
+        }
         alt="computer background"
         className="max-w-3xl rounded-3xl mb-12"
       />
-
       <Title className="text-4xl" label="Mission" />
       <div className="flex flex-col gap-3 text-justify pb-4 text-lg">
         {selectedProject.description.header}
@@ -24,7 +30,8 @@ export default function ProjectDescription({ selectedProject }) {
       </div>
       <div className="border-l-8 border-secondary">
         <p className="text-xl pl-4">
-          <span className="font-bold">Nature du projet: </span>Personnel
+          <span className="font-bold">Nature du projet: </span>
+          {selectedProject.isClientProject ? "Projet Client" : "Personnel"}
         </p>
       </div>
     </div>

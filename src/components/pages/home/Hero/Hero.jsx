@@ -5,7 +5,6 @@ import Button from "../../../reusable-ui/Button";
 import { PiCode, PiFileArrowDown } from "react-icons/pi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import SocialIcon from "../../../reusable-ui/SocialIcon";
-import ExternalLink from "../WorkSection/ExternalLink";
 import ImageHero from "./ImageHero";
 import TextHero from "./TextHero";
 

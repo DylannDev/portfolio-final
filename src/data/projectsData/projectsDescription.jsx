@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export const vroomDescription = {
   header: (
     <>
@@ -17,20 +18,20 @@ export const vroomDescription = {
       </p>
 
       <p>
-        Grâce à une conception responsive, le site s’adapte de manière
-        transparente à différents appareils, offrant une expérience utilisateur
-        optimale, que ce soit sur un ordinateur de bureau, une tablette ou un
-        smartphone.
+        J'ai ici utilisé Next.js principalement pour sa gestion simplifié des
+        routes, l'optimisation du rendu des images et le rendu coté serveur
+        (SSR), ce qui offre des avantages en termes de performances et de
+        référencement.
       </p>
     </>
   ),
   features: [
-    "Authentification Google ou Mail et Password avec Firebase",
-    "Sélection de la photo de profil",
-    "Bouton de déconnexion",
-    "Catalogue de Contenus",
-    "Carousel des derniers films en tendance",
-    "Au hover, changement de la miniature et apparition de boutons de lecture et autres",
+    "Sélection du véhicule, de la ville et de la durée de location",
+    "Calcul du coût totale de la location en fonction de la durée choisie",
+    "Carousel de cartes avec informations détaillés sur les vehicules",
+    "Carousel d’avis utilisateurs",
+    "Section FAQ",
+    "Responsive Design",
   ],
 };
 
@@ -38,16 +39,28 @@ export const crustyDescription = {
   header: (
     <>
       <p>
-        Crusty Pizza est une plateforme de commande de pizzas au design moderne
-        et aux fonctionnalités diverses. Vous pouvez dores et déjà consulter le
-        repo sur Github.
+        Crusty Pizza est une plateforme de commande de pizzas. C'est un projet
+        personnel développé avec React, Styled-Components et Firebase. Cette
+        plateforme permet principalement aux utilisateurs de consulter le menu
+        et d'ajouter des produits au panier. Elle contient également un panel
+        admin permettant de créer, modifier ou supprimer un produit. De plus, le
+        panier est sauvegardé grâce au localStorage du navigateur, l'utilisateur
+        peut donc retrouver son panier intact même après une déconnexion.
+      </p>
+      <p>
+        J'ai voulu ici mettre en exergue toutes les bonnes pratiques de
+        développement qui permettent de créer une application robuste et rapide.
+        L'objectif principal de ce projet était de créer une application
+        <strong> CRUD</strong> à l'aide de Firebase.
       </p>
     </>
   ),
   features: [
     "Redirection vers le menu en entrant son nom à l’accueil",
+    "Panel admin pour ajouter, supprimer ou modifier des produits",
     "Ajout de la sélection du menu dans le panier",
-    "Panel admin pour rajouter ou supprimer des produits",
+    "Incrémentation ou décrémentation de la quantité des articles",
+    "Sauvegarde du panier selon le compte utilisateur",
   ],
 };
 
@@ -75,5 +88,38 @@ export const disneyDescription = {
     "Catalogue de Contenus",
     "Carousel des derniers films en tendance",
     "Au hover, changement de la miniature et apparition de boutons de lecture et autres",
+  ],
+};
+
+export const portfolioDescription = {
+  header: (
+    <>
+      <p>
+        En réalisant mon portfolio, je mets en lumière mes compétences en
+        développement front-end, tout en montrant un attrait certain pour le
+        webdesign et le graphic design plus généralement.
+      </p>
+      <p>
+        J'adopte des approches novatrices, telles que l'intégration de sections
+        de type blog, où chaque projet est présenté comme un article, mais dans
+        un format de portfolio détaillé. Cette approche me permet de démontrer
+        ma capacité à transformer des mises en page en les adaptant de manière
+        précise à des contextes spécifiques.
+      </p>
+      <p>
+        J'ai développé ce portfolio tel un produit avec des techniques tels que
+        la mise en page, le copywriting, les appels à l'action, et
+        l'optimisation de l'UI/UX design. L'objectif est de mettre en avant mon
+        profil, de manière à illustrer mon intérêt et ma capacité à collaborer
+        sur de nouveaux projets.
+      </p>
+    </>
+  ),
+  features: [
+    "CV téléchargeable",
+    "Dark Mode / Light Mode",
+    "Liens vers les profils sociaux et GitHub",
+    "Présentation des compétences et des projets réalisés",
+    "Section avis",
   ],
 };
