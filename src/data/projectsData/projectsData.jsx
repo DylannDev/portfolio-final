@@ -1,6 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import LogoCrustyPizza from "../../components/reusable-ui/svg/LogoCrustyPizza";
 import LogoDisneyPlus from "../../components/reusable-ui/svg/LogoDisneyPlus";
+import LogoDylannDev from "../../components/reusable-ui/svg/LogoDylannDev";
 import LogoVroom from "../../components/reusable-ui/svg/LogoVroom";
 import {
   crustyDescription,
@@ -61,7 +62,7 @@ export const projectsData = [
     images: "projet-disney.png",
     logo: <LogoDisneyPlus />,
     shortDescription:
-      "La célèbre plateforme de streaming recréée par moi-même.",
+      "La célèbre plateforme de streaming recréée par moi-même 📺",
     mediumDescription:
       "Reproduction de la plateforme de streaming et de quelques fonctionnalités.",
     description: {
@@ -77,10 +78,10 @@ export const projectsData = [
   },
   {
     id: "portfolio",
-    name: "Portfolio Dylann Xavero",
+    name: "Mon Portfolio",
     images: "projet-portfolio-dark.png",
-    logo: <LogoVroom />,
-    shortDescription: "Portfolio présentant mes différents projets",
+    logo: <LogoDylannDev />,
+    shortDescription: "Portfolio présentant mes différents projets 📂",
     mediumDescription:
       "Réalisation de mon portfolio développé par mes soins, ayant pour objectif de présenter mes différents projets.",
     description: {

@@ -1,3 +1,13 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/DarkModeContext";
+
 export default function Logo() {
-  return <div className="text-3xl font-bold">Dylann Dev.</div>;
+  const { darkMode } = useContext(DarkModeContext);
+  return (
+    <img
+      src={`/images/${darkMode ? "logo-dev-blanc.svg" : "logo-dev-black.svg"}`}
+      alt="Logo Dylann Dev"
+      className="w-[250px]"
+    />
+  );
 }
