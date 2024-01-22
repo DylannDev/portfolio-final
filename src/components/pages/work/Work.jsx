@@ -4,7 +4,6 @@ import { DarkModeContext } from "../../../context/DarkModeContext";
 import { useContext } from "react";
 import ProjectCard from "./ProjectCard";
 import { projectsData } from "../../../data/projectsData/projectsData";
-import CallToAction from "../home/ServicesSection/CallToAction";
 
 export default function Work() {
   const { darkMode } = useContext(DarkModeContext);
@@ -35,7 +34,6 @@ export default function Work() {
           />
         ))}
       </div>
-      <CallToAction />
     </Section>
   );
 }
