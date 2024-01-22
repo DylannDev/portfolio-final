@@ -9,7 +9,7 @@ export default function ResumeSection() {
     <Section className="mb-0">
       <div className="flex justify-between items-center">
         <img
-          src="/images/Resume-folder-amico.svg"
+          src="/images/illustrations/Resume-folder-amico.svg"
           alt="illustration cv"
           className="max-w-[200px]"
         />
