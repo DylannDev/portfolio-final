@@ -9,13 +9,13 @@ export default function CustomerNeedsSection() {
   return (
     <Section
       variant="large"
-      className="flex justify-between items-center my-16"
+      className="flex lg:flex-row flex-col gap-20 justify-between items-center my-16"
     >
-      <div className="flex flex-col gap-4 w-1/2">
+      <div className="flex flex-col lg:items-start items-center gap-6 lg:gap-4 lg:w-1/2 max-w-[700px] ">
         <Title
           label="Vos besoins"
           description="Que pourrions-nous faire ensemble ?"
-          className="text-4xl text-left"
+          className="text-4xl lg:text-left text-center"
         />
         <p className="text-lg">
           Je crée des projets web de toutes envergures, allant de simples
@@ -25,13 +25,11 @@ export default function CustomerNeedsSection() {
           afin d'assurer une flexibilité optimale dans le processus de
           développement.
         </p>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap justify-center gap-2">
           {MainSkillsData.map((skill, index) => (
-            <div key={index} className="flex items-center gap-[2px]">
+            <div key={index} className="flex  items-center gap-[2px]">
               <RxCheck className="text-xl text-secondary animate-pulse" />
-              <span className="text-sm font-bold whitespace-nowrap ">
-                {skill.label}
-              </span>
+              <span className="text-sm font-bold">{skill.label}</span>
             </div>
           ))}
         </div>
@@ -41,7 +39,7 @@ export default function CustomerNeedsSection() {
       <img
         src="/images/illustrations/Hand-coding-pana.svg"
         alt="web developer illustration"
-        className="max-h-[400px]"
+        className="lg:max-h-[400px] max-h-[550px]"
       />
     </Section>
   );

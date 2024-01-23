@@ -11,8 +11,8 @@ import Section from "../../../reusable-ui/Section";
 
 export default function Hero() {
   return (
-    <Section className="flex mb-40" variant="large">
-      <div className="flex w-full items-center justify-between">
+    <Section className="flex mb-20 sm:mb-40" variant="large">
+      <div className="flex xl:flex-row flex-col gap-20 w-full items-center justify-between">
         <TextHero />
         <ImageHero />
       </div>

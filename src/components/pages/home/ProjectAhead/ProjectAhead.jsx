@@ -16,21 +16,23 @@ export default function ProjectAhead() {
       <Title
         label="Projet Perso"
         description="Un aperçu d'une de mes réalisations."
-        className="text-4xl text-left mb-8"
+        className="text-4xl text-center lg:text-left mb-8"
       />
-      <div className="flex">
+      <div className="flex lg:flex-row lg:items-start gap-8 flex-col items-center ">
         <img
           src={`/images/${selectedProject.images}`}
           alt="image du projet crusty pizza"
-          className="rounded-3xl w-1/2 cursor-pointer"
+          className="rounded-3xl w-full max-w-[600px] cursor-pointer"
           onClick={() => navigate(`/work/${selectedProject.id}`)}
         />
-        <div className="pl-8 w-1/2 flex flex-col gap-4">
+        <div className="lg:w-1/2 w-full max-w-[600px] flex flex-col gap-6">
           <Title label={selectedProject.name} className="text-left text-3xl" />
-          {selectedProject.mediumDescription}
+          {selectedProject.description.header}
           <StackBadges project={selectedProject} />
           <ExternalLinks project={selectedProject} />
-          <Button label="Consulter tous mes projets" href="/work" />
+          <div className="flex flex-col items-center lg:items-start mt-4 lg:mt-0">
+            <Button label="Consulter tous mes projets" href="/work" />
+          </div>
         </div>
       </div>
     </Section>

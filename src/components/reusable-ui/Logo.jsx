@@ -9,7 +9,7 @@ export default function Logo() {
     <img
       src={`/images/${darkMode ? "logo-dev-blanc.svg" : "logo-dev-black.svg"}`}
       alt="Logo Dylann Dev"
-      className="w-[250px] cursor-pointer"
+      className="w-[200px] md:w-[250px] cursor-pointer"
       onClick={() => navigate("/")}
     />
   );
