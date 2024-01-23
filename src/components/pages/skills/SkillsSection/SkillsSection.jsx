@@ -6,7 +6,7 @@ import SkillsCard from "./SkillsCard";
 export default function SkillsSection() {
   return (
     <>
-      <Section className="pt-[25dvh] ">
+      <Section>
         <Title
           variant="section"
           label="Skills"

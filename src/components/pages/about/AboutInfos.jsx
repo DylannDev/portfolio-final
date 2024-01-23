@@ -4,7 +4,7 @@ import TextAbout from "./TextAbout";
 
 export default function AboutInfos() {
   return (
-    <Section className="mb-0">
+    <Section className="mb-0 flex flex-col items-center">
       <div className="max-w-3xl">
         <Title
           variant="section"

@@ -8,9 +8,8 @@ import ProjectAhead from "./ProjectAhead/ProjectAhead";
 
 export default function Home() {
   return (
-    <div className="fade-in">
+    <div className="fade-in pt-52">
       <Hero />
-      <hr />
       <ValuesSection />
       <MainSkills />
       <CustomerNeedsSection />

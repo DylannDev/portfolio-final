@@ -5,12 +5,12 @@ import AboutInfos from "./AboutInfos";
 
 export default function About() {
   return (
-    <div className="fade-in">
+    <>
       <BackButton />
-      <div className="flex flex-col items-center pt-[20dvh]">
+      <div className="fade-in pt-60">
         <AboutInfos />
+        <ResumeSection />
       </div>
-      <ResumeSection />
-    </div>
+    </>
   );
 }

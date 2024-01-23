@@ -6,7 +6,7 @@ import ToggleButton from "./ToggleButton";
 
 export default function Navbar() {
   return (
-    <header className="flex justify-between items-center h-[15dvh] absolute top-0 left-0 right-0 border-b-[1px] border-slate-200 ">
+    <header className="flex justify-between items-center h-40 absolute top-0 left-0 right-0 border-b-[1px] border-slate-200 ">
       <Logo />
       <NavbarLinks />
       <div className="flex items-center gap-3">

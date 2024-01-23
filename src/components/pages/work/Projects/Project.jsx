@@ -16,19 +16,21 @@ export default function Project() {
   const selectedProject = findProjectById(projectsData, id);
 
   return (
-    <>
+    <div className="fade-in">
       <BackButton />
-      <Section className="flex justify-center pt-[30dvh]">
-        <div className="max-w-3xl">
-          <ProjectInfos selectedProject={selectedProject} />
-          <ProjectDescription
-            selectedProject={selectedProject}
-            portfolioImage={portfolioImage}
-          />
-        </div>
-      </Section>
+      <div className="pt-60">
+        <Section className="flex justify-center">
+          <div className="max-w-3xl">
+            <ProjectInfos selectedProject={selectedProject} />
+            <ProjectDescription
+              selectedProject={selectedProject}
+              portfolioImage={portfolioImage}
+            />
+          </div>
+        </Section>
+      </div>
       <hr />
       <MoreProjects id={id} />
-    </>
+    </div>
   );
 }
