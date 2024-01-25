@@ -38,6 +38,25 @@ export const projectsData = [
     },
   },
   {
+    id: "portfolio",
+    name: "Mon Portfolio",
+    images: "projet-portfolio-dark.png",
+    logo: <LogoDylannDev />,
+    shortDescription: "Portfolio présentant mes différents projets 📂",
+    mediumDescription:
+      "Réalisation de mon portfolio développé par mes soins, ayant pour objectif de présenter mes différents projets.",
+    description: {
+      header: portfolioDescription.header,
+      features: portfolioDescription.features,
+    },
+    isClientProject: false,
+    badges: [REACT, TAILWIND],
+    links: {
+      github: "https://github.com/DylannDev/portfolio-final",
+      demo: "https://www.dylann-dev.com/",
+    },
+  },
+  {
     id: "vroom",
     name: "Vroom - Agence de Location",
     images: "projet-vroom.png",
@@ -56,6 +75,7 @@ export const projectsData = [
       demo: "https://vroom-car-rental.vercel.app/",
     },
   },
+
   {
     id: "disney-plus-clone",
     name: "Disney + (Clone)",
@@ -74,25 +94,6 @@ export const projectsData = [
     links: {
       github: "https://github.com/DylannDev/disney-plus-clone",
       demo: "https://disneyplus-dylanndev.vercel.app/",
-    },
-  },
-  {
-    id: "portfolio",
-    name: "Mon Portfolio",
-    images: "projet-portfolio-dark.png",
-    logo: <LogoDylannDev />,
-    shortDescription: "Portfolio présentant mes différents projets 📂",
-    mediumDescription:
-      "Réalisation de mon portfolio développé par mes soins, ayant pour objectif de présenter mes différents projets.",
-    description: {
-      header: portfolioDescription.header,
-      features: portfolioDescription.features,
-    },
-    isClientProject: false,
-    badges: [REACT, TAILWIND],
-    links: {
-      github: "https://github.com/DylannDev/portfolio-final",
-      demo: "https://www.dylann-dev.com/",
     },
   },
 ];
