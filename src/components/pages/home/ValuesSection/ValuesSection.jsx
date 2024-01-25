@@ -1,4 +1,4 @@
-import { ValuesSectionData } from "../../../../data/valuesData/ValuesSectionData";
+import { ValuesSectionData } from "../../../../data/valuesData/valuesSectionData";
 import Section from "../../../reusable-ui/Section";
 import CallToAction from "../ServicesSection/CallToAction";
 import ValuesCard from "./ValuesCard";
