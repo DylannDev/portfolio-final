@@ -6,7 +6,7 @@ import ServicesCard from "./ServicesCard";
 
 export default function ServicesSection() {
   return (
-    <Section className="my-16" variant="large">
+    <Section className="my-16" variant="large" id="servicesSection">
       <h2 className="font-bold text-3xl sm:text-5xl text-center mb-24 leading-tight font-title">
         Ce que nous pourrions <br /> réaliser ensemble
         <span className="text-secondary ">.</span>
@@ -22,7 +22,9 @@ export default function ServicesSection() {
         </p>
       </div>
       <div className="grid md:grid-cols-3 gap-4 xl:gap-6 text-center">
-        <ServicesCard services={servicesSectionData} />
+        {servicesSectionData.map((service, index) => (
+          <ServicesCard key={index} service={service} />
+        ))}
       </div>
       <CallToAction />
     </Section>

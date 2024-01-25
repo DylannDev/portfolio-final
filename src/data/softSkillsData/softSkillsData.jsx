@@ -23,9 +23,14 @@ export const softSkillsData = [
     description:
       "Être rigoureux sur l'organisation de mon travail est essentiel pour assurer la qualité de vos projets",
   },
-  {
-    img: "/images/illustrations/Team goals-cuate.svg",
-    quality: "esprit d'équipe",
-    description: "Je m'intègre facilement à une équipe, un vrai caméléon !",
-  },
+  // {
+  //   img: "/images/illustrations/Team goals-cuate.svg",
+  //   quality: "esprit d'équipe",
+  //   description: "Je m'intègre facilement à une équipe, un vrai caméléon !",
+  // },
+  // {
+  //   img: "/images/illustrations/Team goals-cuate.svg",
+  //   quality: "esprit d'équipe",
+  //   description: "Je m'intègre facilement à une équipe, un vrai caméléon !",
+  // },
 ];

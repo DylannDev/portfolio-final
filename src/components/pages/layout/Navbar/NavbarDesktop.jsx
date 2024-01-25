@@ -1,8 +1,7 @@
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Logo from "../../../reusable-ui/Logo";
-import SocialIcon from "../../../reusable-ui/SocialIcon";
 import NavbarLinks from "./NavbarLinks";
 import ToggleButton from "./ToggleButton";
+import SocialMediaLinks from "../../../reusable-ui/SocialMediaLinks";
 
 export default function NavbarDesktop() {
   return (
@@ -10,8 +9,7 @@ export default function NavbarDesktop() {
       <Logo />
       <NavbarLinks />
       <div className="flex items-center gap-3">
-        <SocialIcon Icon={<FaGithub />} size="text-2xl" />
-        <SocialIcon Icon={<FaLinkedinIn />} size="text-2xl" />
+        <SocialMediaLinks minified />
         <ToggleButton />
       </div>
     </header>

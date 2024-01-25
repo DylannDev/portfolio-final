@@ -2,10 +2,13 @@
 
 import { Link } from "react-router-dom";
 
-export default function SocialIcon({ Icon, color, size }) {
+export default function SocialIcon({ socialData }) {
   return (
-    <Link className={`${color} ${size} hover:text-primary cursor-pointer`}>
-      {Icon}
+    <Link
+      to={socialData.link}
+      className="text-2xl hover:text-primary cursor-pointer"
+    >
+      {socialData.icon}
     </Link>
   );
 }
