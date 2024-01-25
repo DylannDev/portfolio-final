@@ -7,7 +7,7 @@ import Layout from "./components/pages/layout/Layout";
 import { DarkModeContext } from "./context/DarkModeContext";
 import About from "./components/pages/about/About";
 import Project from "./components/pages/work/Projects/Project";
-import SkillsPage from "./components/pages/skills/SkillsPage";
+import SkillsPage from "./components/pages/skills/SkillsPage.jsx";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
