@@ -1,5 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-import { testimonialsData } from "../../../../data/TestimonialsData/TestimonialsData";
+import { testimonialsData } from "../../../../data/testimonialsData/testimonialsData";
 import Section from "../../../reusable-ui/Section";
 import Title from "../../../reusable-ui/Title";
 import TestimonialsInfos from "./TestimonialsInfos";
