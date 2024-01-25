@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import Title from "../../../reusable-ui/Title";
-import { navbarLinksData } from "../../../../data/navbarLinksData/navbarLinksData";
+import { navbarLinksData } from "../../../../data/navbarLinksData/navbarLinksData.jsx";
 
 export default function NavbarLinks({ onClick }) {
   return (
