@@ -5,7 +5,7 @@ import ErrorPage from "./components/pages/error/ErrorPage";
 import Layout from "./components/pages/layout/Layout.jsx";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/DarkModeContext.jsx";
-import About from "./components/pages/about/about.jsx";
+import About from "./components/pages/about/About.jsx";
 import Project from "./components/pages/work/Projects/Project.jsx";
 import SkillsPage from "./components/pages/skills/skillsPage.jsx";
 
