@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       <BackButton />
-      <div className="fade-in pt-60">
+      <div className="fade-in lg:pt-60 pt-44">
         <AboutInfos />
         <ResumeSection />
       </div>

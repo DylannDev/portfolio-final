@@ -11,7 +11,7 @@ export default function ProjectInfos({ selectedProject }) {
         description={selectedProject.shortDescription}
         className="text-4xl"
       />
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
         <StackBadges project={selectedProject} />
         <ExternalLinks project={selectedProject} />
       </div>

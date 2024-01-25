@@ -18,9 +18,9 @@ export default function Project() {
   return (
     <div className="fade-in">
       <BackButton />
-      <div className="pt-60">
-        <Section className="flex justify-center">
-          <div className="max-w-3xl">
+      <div className="lg:pt-60 pt-44">
+        <Section variant="large" className="flex justify-center">
+          <div className="lg:max-w-3xl">
             <ProjectInfos selectedProject={selectedProject} />
             <ProjectDescription
               selectedProject={selectedProject}

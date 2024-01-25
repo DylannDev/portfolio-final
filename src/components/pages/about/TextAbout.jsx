@@ -4,7 +4,7 @@ import Title from "../../reusable-ui/Title";
 export default function TextAbout() {
   return (
     <>
-      <Title className="text-4xl mb-6" label="Background" />
+      <Title className="text-2xl sm:text-4xl mb-6" label="Background" />
       <div className="flex flex-col gap-6 text-justify text-lg">
         <p>
           À l'issue de mes études, mon intérêt pour la conception de sites web

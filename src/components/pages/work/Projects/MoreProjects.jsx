@@ -15,7 +15,7 @@ export default function MoreProjects({ id }) {
         description="Quelques projets sur lesquels j'ai travaillé"
         size="text-4xl"
       />
-      <div className={`grid grid-cols-3 justify-items-center  gap-8`}>
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-8">
         {projectsData.map(
           (project, index) =>
             project.id !== id && (

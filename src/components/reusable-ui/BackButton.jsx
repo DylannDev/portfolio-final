@@ -9,7 +9,7 @@ export default function BackButton() {
 
   return (
     <button
-      className={`flex items-center gap-1  hover:border-b-[1px] pb-[2px] absolute z-10 cursor-pointer mt-56 ${
+      className={`flex items-center gap-1  hover:border-b-[1px] pb-[2px] absolute z-10 cursor-pointer lg:mt-56 mt-40 ${
         darkMode ? "text-light border-b-light" : "text-primary border-b-primary"
       }`}
       onClick={() => navigate(-1)}

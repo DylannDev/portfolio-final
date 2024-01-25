@@ -8,7 +8,7 @@ export default function ProjectCard({ project, darkMode, shortenLabel }) {
   const navigate = useNavigate();
   return (
     <Card
-      className="max-w-[360px] cursor-pointer p-8 hover:scale-105 transition-all"
+      className="w-full md:max-w-[360px] cursor-pointer p-8 hover:scale-105 transition-all"
       onClick={() => navigate(`/work/${project.id}`)}
     >
       <div className="flex flex-col gap-6 h-full ">

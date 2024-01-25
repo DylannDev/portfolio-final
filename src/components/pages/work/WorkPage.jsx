@@ -5,7 +5,7 @@ export default function WorkPage() {
   return (
     <div className="fade-in">
       <BackButton />
-      <div className="flex items-center justify-center pt-60 ">
+      <div className="flex items-center justify-center lg:pt-60 pt-44 ">
         <Work />
       </div>
     </div>

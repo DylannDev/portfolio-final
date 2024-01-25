@@ -4,8 +4,8 @@ import TextAbout from "./TextAbout";
 
 export default function AboutInfos() {
   return (
-    <Section className="mb-0 flex flex-col items-center">
-      <div className="max-w-3xl">
+    <Section variant="large" className="mb-0 flex flex-col items-center">
+      <div className="lg:max-w-3xl">
         <Title
           variant="section"
           label="About Me"
@@ -14,7 +14,7 @@ export default function AboutInfos() {
         <img
           src="/images/computer-background.jpg"
           alt="computer"
-          className="max-w-3xl rounded-3xl mb-12"
+          className="rounded-3xl mb-12"
         />
 
         <TextAbout />
