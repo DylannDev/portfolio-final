@@ -7,10 +7,10 @@ export default function About() {
   return (
     <>
       <BackButton />
-      <div className="flex flex-col items-center pt-[20dvh]">
+      <div className="fade-in lg:pt-60 pt-44">
         <AboutInfos />
+        <ResumeSection />
       </div>
-      <ResumeSection />
     </>
   );
 }

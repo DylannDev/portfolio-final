@@ -5,7 +5,7 @@ import { PiChatText, PiStack } from "react-icons/pi";
 
 export default function CallToAction({ variant = "mail" }) {
   return (
-    <div className="flex flex-col items-center gap-6 mt-32">
+    <div className="flex flex-col items-center gap-6 mt-24 sm:mt-32 text-center">
       <h3 className="font-bold font-title text-2xl">
         {variant === "mail"
           ? "Vous souhaitez discuter d'une éventuelle collaboration ?"
@@ -14,7 +14,7 @@ export default function CallToAction({ variant = "mail" }) {
       <p className="text-xl mb-6">
         {variant === "mail"
           ? "Je suis toujours ouvert à la discussion et disponible pour un échange."
-          : "Zoom sur mes compétences de développeur web front-end."}
+          : "Examinons de plus près mes compétences de développeur web front-end."}
       </p>
 
       <Button

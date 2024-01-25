@@ -1,14 +1,11 @@
-import { useNavigate } from "react-router-dom";
-import Button from "../../../reusable-ui/Button";
 import Section from "../../../reusable-ui/Section";
 import Title from "../../../reusable-ui/Title";
 import { projectsData } from "../../../../data/projectsData/projectsData";
 import { findProjectById } from "../../../../utils/array";
-import ExternalLinks from "../../../reusable-ui/ExternalLinks";
-import StackBadges from "../../../reusable-ui/StackBadges";
+import ProjectAheadText from "./ProjectAheadText";
+import ProjectAheadImage from "./ProjectAheadImage";
 
 export default function ProjectAhead() {
-  const navigate = useNavigate();
   const id = "crusty-pizza";
   const selectedProject = findProjectById(projectsData, id);
   return (
@@ -16,22 +13,11 @@ export default function ProjectAhead() {
       <Title
         label="Projet Perso"
         description="Un aperçu d'une de mes réalisations."
-        className="text-4xl text-left mb-8"
+        className="text-4xl text-center lg:text-left mb-8"
       />
-      <div className="flex">
-        <img
-          src={`/images/${selectedProject.images}`}
-          alt="image du projet crusty pizza"
-          className="rounded-3xl w-1/2 cursor-pointer"
-          onClick={() => navigate(`/work/${selectedProject.id}`)}
-        />
-        <div className="pl-8 w-1/2 flex flex-col gap-4">
-          <Title label={selectedProject.name} className="text-left text-3xl" />
-          {selectedProject.mediumDescription}
-          <StackBadges project={selectedProject} />
-          <ExternalLinks project={selectedProject} />
-          <Button label="Consulter tous mes projets" href="/work" />
-        </div>
+      <div className="flex lg:flex-row lg:items-start gap-8 flex-col items-center ">
+        <ProjectAheadImage selectedProject={selectedProject} />
+        <ProjectAheadText selectedProject={selectedProject} />
       </div>
     </Section>
   );

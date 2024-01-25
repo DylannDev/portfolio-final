@@ -4,27 +4,29 @@ import Title from "../../reusable-ui/Title";
 export default function TextAbout() {
   return (
     <>
-      <Title className="text-4xl mb-6" label="Background" />
+      <Title className="text-2xl sm:text-4xl mb-6" label="Background" />
       <div className="flex flex-col gap-6 text-justify text-lg">
         <p>
-          Actuellement en reconversion professionnelle, je me suis pris de
-          passion pour la conception de sites web après mes études. Le fait de
-          pouvoir créer de moi-même mes propres projets m’a tout de suite plu.
-          Ayant également un attrait certain pour le design, c’est tout
-          naturellement que je me suis tourné vers le front-end.
+          À l'issue de mes études, mon intérêt pour la conception de sites web
+          s'est rapidement transformé en une véritable passion. La possibilité
+          de donner vie à mes propres projets m'a immédiatement captivé. Doté
+          d'un attrait certain pour le design, j'ai choisi orienter mes
+          compétences vers le front-end.
         </p>
         <p>
-          Je suis un développeur passionné avec une formation solide en
-          Javascript et une très bonne maîtrise de sa librairie React. J’aime
-          créer des interfaces visuellement agréables et intuitives. Toujours à
-          la recherche de nouveaux défis, chaque nouveau projet est une
-          opportunité de mettre en pratique mes compétences et d’en apprendre
-          toujours plus sur la programmation web.
+          En tant que développeur passionné, je dispose d'une formation robuste
+          en Javascript, avec une expertise certaine en React. Je prends plaisir
+          à concevoir des interfaces à la fois visuellement attrayantes et
+          intuitives. Je suis également en mesure de résoudre des problèmes
+          complexes en élaborant des solutions ingénieuses et efficaces.
         </p>
         <p>
-          Je suis ouvert aux nouvelles opportunités et collaborations
-          passionnantes. N'hésitez pas à me contacter pour discuter de votre
-          projet ou simplement pour échanger sur le monde du développement web.
+          Toujours à la recherche de nouveaux défis, chaque nouveau projet
+          constitue pour moi une occasion d'approfondir mes connaissances en
+          programmation web. Je suis ouvert aux nouvelles opportunités et
+          collaborations passionnantes. N'hésitez pas à me contacter pour
+          discuter de votre projet ou simplement échanger sur le vaste univers
+          du développement web.
         </p>
       </div>
     </>

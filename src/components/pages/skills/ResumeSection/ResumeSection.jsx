@@ -6,16 +6,18 @@ import Section from "../../../reusable-ui/Section";
 
 export default function ResumeSection() {
   return (
-    <Section className="mb-0">
-      <div className="flex justify-between items-center">
+    <Section className="mb-0 pt-0">
+      <div className="flex gap-20 lg:flex-row flex-col justify-between items-center">
         <img
           src="/images/illustrations/Resume-folder-amico.svg"
           alt="illustration cv"
           className="max-w-[200px]"
         />
-        <p className="text-xl font-bold pr-4 text-center">
-          Besoin d'en savoir plus sur mon parcours ? <br />
-          Téléchargez mon CV en ligne.
+        <p className="text-xl flex flex-col items-center gap-4">
+          <span className="font-bold text-center">
+            Besoin d'en savoir plus sur mon parcours ?
+          </span>
+          <span>Téléchargez mon CV en ligne.</span>
         </p>
         <Button
           Icon={<PiFileArrowDown />}

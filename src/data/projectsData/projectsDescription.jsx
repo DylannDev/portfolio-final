@@ -39,18 +39,18 @@ export const crustyDescription = {
   header: (
     <>
       <p>
-        Crusty Pizza est une plateforme de commande de pizzas. C'est un projet
-        personnel développé avec React, Styled-Components et Firebase. Cette
-        plateforme permet principalement aux utilisateurs de consulter le menu
-        et d'ajouter des produits au panier. Elle contient également un panel
-        admin permettant de créer, modifier ou supprimer un produit. De plus, le
+        Crusty Pizza est une plateforme de commande de pizzas. Cette plateforme
+        permet principalement aux utilisateurs de consulter le menu et d'ajouter
+        des produits au panier. Elle contient également un panel admin
+        permettant de créer, modifier ou supprimer un produit. De plus, le
         panier est sauvegardé grâce au localStorage du navigateur, l'utilisateur
         peut donc retrouver son panier intact même après une déconnexion.
       </p>
       <p>
         J'ai voulu ici mettre en exergue toutes les bonnes pratiques de
-        développement qui permettent de créer une application robuste et rapide.
-        L'objectif principal de ce projet était de créer une application
+        développement qui permettent de créer une application robuste et rapide
+        avec React. L'objectif principal de ce projet était de créer une
+        application
         <strong> CRUD</strong> à l'aide de Firebase.
       </p>
     </>

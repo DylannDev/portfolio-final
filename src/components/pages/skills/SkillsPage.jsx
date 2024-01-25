@@ -7,9 +7,11 @@ export default function SkillsPage() {
   return (
     <>
       <BackButton />
-      <SkillsSection />
-      <SoftSkillsSection />
-      <ResumeSection />
+      <div className="fade-in lg:pt-60 pt-44">
+        <SkillsSection />
+        <SoftSkillsSection />
+        <ResumeSection />
+      </div>
     </>
   );
 }

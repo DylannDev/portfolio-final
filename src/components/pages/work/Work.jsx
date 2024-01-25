@@ -15,14 +15,14 @@ export default function Work() {
         label="Work"
         description="Quelques projets sur lesquels j'ai pris plaisir à travailler."
       />
-      <div className="flex mb-6">
+      <div className="flex justify-center md:justify-start mb-6">
         <p>
           Cliquez sur les cartes pour
           <span className="font-bold"> en savoir plus</span>.
         </p>
       </div>
       <div
-        className={`grid gap-6  grid-cols-2 max-w-[750px]
+        className={`grid justify-items-center md:grid-cols-2 gap-4 xl:gap-6 max-w-[750px]
         `}
       >
         {projectsData.map((project, index) => (

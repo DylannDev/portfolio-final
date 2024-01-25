@@ -7,14 +7,15 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import SocialIcon from "../../../reusable-ui/SocialIcon";
 import ImageHero from "./ImageHero";
 import TextHero from "./TextHero";
+import Section from "../../../reusable-ui/Section";
 
 export default function Hero() {
   return (
-    <div className="flex pt-[30dvh] pb-[15dvh] ">
-      <div className="flex w-full items-center justify-between">
+    <Section className="flex mb-20 sm:mb-40" variant="large">
+      <div className="flex xl:flex-row flex-col gap-20 w-full items-center justify-between">
         <TextHero />
         <ImageHero />
       </div>
-    </div>
+    </Section>
   );
 }
