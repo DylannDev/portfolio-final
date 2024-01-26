@@ -16,7 +16,7 @@ export default function NavbarLinksMobile({
 
     setTimeout(() => {
       setMenuClicked(false);
-    }, 1000);
+    }, 300);
   };
   return (
     <>
