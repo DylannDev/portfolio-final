@@ -13,7 +13,7 @@ export default function SkillsSection() {
           description="Voici les technos sur lesquelles je suis à l'aise."
         />
 
-        <div className="grid md:grid-cols-3 gap-4 xs:justify-items-center md:jus xl:gap-6">
+        <div className="grid md:grid-cols-3 gap-4 xxs:justify-items-center xl:gap-6">
           {skillsData.map((skill, index) => (
             <SkillsCard key={index} skill={skill} />
           ))}

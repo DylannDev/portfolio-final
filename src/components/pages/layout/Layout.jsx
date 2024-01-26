@@ -7,10 +7,8 @@ export default function Layout() {
   return (
     <>
       <ScrollRestoration />
-      <div className="max-w-7xl xl:px-[50px] px-5 mx-auto fade-in">
-        <div className="relative md:px-[50px] px-5">
-          <Navbar />
-        </div>
+      <div className="max-w-7xl xl:px-[50px] px-5 mx-auto fade-in relative">
+        <Navbar />
         <main>
           <Outlet />
         </main>

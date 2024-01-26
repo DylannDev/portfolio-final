@@ -23,7 +23,7 @@ export default function MoreProjects({ id }) {
                 key={index}
                 project={project}
                 darkMode={darkMode}
-                shortenLabel={true}
+                shortenLabel
               />
             )
         )}
