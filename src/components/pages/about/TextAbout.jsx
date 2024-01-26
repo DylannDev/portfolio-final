@@ -10,7 +10,7 @@ export default function TextAbout() {
           À l'issue de mes études, mon intérêt pour la conception de sites web
           s'est rapidement transformé en une véritable passion. La possibilité
           de donner vie à mes propres projets m'a immédiatement captivé. Doté
-          d'un attrait certain pour le design, j'ai choisi orienter mes
+          d'un attrait certain pour le design, j'ai choisi d'orienter mes
           compétences vers le front-end.
         </p>
         <p>
