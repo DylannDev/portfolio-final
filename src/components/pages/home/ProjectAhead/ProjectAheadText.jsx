@@ -11,7 +11,7 @@ export default function ProjectAheadText({ selectedProject }) {
     <div className="lg:w-1/2 w-full max-w-[600px] flex flex-col gap-6">
       <Title label={selectedProject.name} className="text-left text-3xl" />
       {selectedProject.description.header}
-      <StackBadges project={selectedProject} />
+      <StackBadges project={selectedProject} shortenLabel />
       <ExternalLinks project={selectedProject} />
       <div className="flex flex-col items-center lg:items-start mt-4 lg:mt-0">
         <Button label="Consulter tous mes projets" href="/work" />

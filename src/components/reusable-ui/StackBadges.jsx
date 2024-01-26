@@ -3,7 +3,7 @@ import Badge from "./Badge";
 
 export default function StackBadges({ project, shortenLabel }) {
   return (
-    <div className="flex gap-1 overflow-x-clip">
+    <div className="flex gap-1 overflow-x-scroll no-scrollbar">
       {project.badges.map((badge, index) => (
         <Badge
           key={index}

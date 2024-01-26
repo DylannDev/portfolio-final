@@ -12,7 +12,7 @@ export default function SoftSkillsSection() {
         label="Soft-Skills"
         description="Zoom sur mes qualités de développeur front-end."
       />
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-12">
+      <div className="grid xs:grid-cols-2 md:grid-cols-4 gap-4 text-center mb-12">
         {softSkillsData.map((skill, index) => (
           <SoftSkillsCard key={index} skill={skill} />
         ))}

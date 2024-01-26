@@ -30,7 +30,7 @@ export default function Work() {
             key={index}
             project={project}
             darkMode={darkMode}
-            shortenLabel={true}
+            shortenLabel
           />
         ))}
       </div>
