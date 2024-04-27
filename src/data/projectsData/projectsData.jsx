@@ -2,12 +2,14 @@
 import LogoCrustyPizza from "../../components/reusable-ui/svg/LogoCrustyPizza";
 import LogoDisneyPlus from "../../components/reusable-ui/svg/LogoDisneyPlus";
 import LogoDylannDev from "../../components/reusable-ui/svg/LogoDylannDev";
+import LogoThreads from "../../components/reusable-ui/svg/LogoThreads";
 import LogoVroom from "../../components/reusable-ui/svg/LogoVroom";
 import {
   crustyDescription,
   disneyDescription,
   portfolioDescription,
   vroomDescription,
+  threadsDescription,
 } from "./projectsDescription";
 import {
   FIREBASE,
@@ -15,9 +17,29 @@ import {
   REACT,
   STYLEDCOMPONENTS,
   TAILWIND,
+  MONGODB,
 } from "./variablesSkillsData";
 
 export const projectsData = [
+  {
+    id: "threads",
+    name: "Threads",
+    images: "projet-threads.png",
+    logo: <LogoThreads />,
+    shortDescription: "Reproduction du réseau social Threads 📱",
+    mediumDescription:
+      "Reproduction de l'interface d'un réseau social et de ses fonctionnalités de base telles que la publication de contenu, les interactions avec les publications, etc...",
+    description: {
+      header: threadsDescription.header,
+      features: threadsDescription.features,
+    },
+    isClientProject: false,
+    badges: [REACT, NEXT, MONGODB],
+    links: {
+      github: "https://github.com/DylannDev/threads-app",
+      demo: "https://threads-appli.vercel.app/",
+    },
+  },
   {
     id: "crusty-pizza",
     name: "Crusty Pizza",

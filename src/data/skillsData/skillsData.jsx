@@ -7,6 +7,8 @@ import {
   SiStyledcomponents,
   SiFirebase,
   SiNextdotjs,
+  SiMongodb,
+  SiTypescript,
 } from "react-icons/si";
 
 const skillsDataObject = {
@@ -14,6 +16,10 @@ const skillsDataObject = {
     {
       icon: <SiReact />,
       label: "React",
+    },
+    {
+      icon: <SiTypescript />,
+      label: "Typescript",
     },
     {
       icon: <SiTailwindcss />,
@@ -29,6 +35,11 @@ const skillsDataObject = {
       icon: <SiFirebase />,
       label: "Firebase",
     },
+    {
+      icon: <SiMongodb />,
+      label: "MongoDB",
+    },
+
     {
       icon: <SiNextdotjs />,
       label: "Next.js",

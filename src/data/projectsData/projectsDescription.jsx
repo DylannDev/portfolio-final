@@ -1,4 +1,41 @@
 /* eslint-disable react/no-unescaped-entities */
+export const threadsDescription = {
+  header: (
+    <>
+      <p>
+        J'ai voulu relever le défi passionnant de reproduire l'application
+        Threads tout en y apportant ma touche personnelle. Conçu dans le cadre
+        d'une formation intensive dirigée par l'équipe de Believemy, ce projet
+        est une véritable vitrine de compétences techniques et de créativité.
+      </p>
+
+      <p>
+        Piloté par ma passion pour les dernières technologies, j'ai embarqué
+        dans cette aventure avec pour objectif de maîtriser Next.js 14. Le choix
+        de Threads comme projet phare de la formation a été une opportunité
+        excitante pour perfectionner mes compétences et explorer les
+        possibilités infinies offertes par ce framework avancé.
+      </p>
+
+      <p>
+        J'ai poussé l'expérience utilisateur un peu plus loin en développant
+        deux fonctionnalités supplémentaires : l'ajout de commentaires et de
+        likes aux publications. Cette initiative démontre mon engagement à aller
+        au-delà des attentes ainsi que mon engagement à exceller dans un
+        environnement en constante évolution.
+      </p>
+    </>
+  ),
+  features: [
+    "Possibilité de créer de nouveaux posts.",
+    "Affichage des commentaires associés à chaque post.",
+    "Possibilité de supprimer des posts.",
+    "Possibilité de like/unlike les posts.",
+    "Gestion de l'authentification des utilisateurs avec email et mot de passe.",
+    "Mode invité pour les utilisateurs sans identification.",
+  ],
+};
+
 export const vroomDescription = {
   header: (
     <>
