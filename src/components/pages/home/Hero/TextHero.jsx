@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { PiCode, PiFileArrowDown } from "react-icons/pi";
 import Button from "../../../reusable-ui/Button";
-import CvDevweb from "/public/cv-dylann-xavero-devweb-2024.pdf";
+import CvDevweb from "/public/dylann-xavero-devweb-2024.pdf";
 
 export default function TextHero() {
   return (
