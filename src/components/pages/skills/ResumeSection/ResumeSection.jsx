@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { PiFileArrowDown } from "react-icons/pi";
 import Button from "../../../reusable-ui/Button";
-import CvDevweb from "/public/dylann-xavero-devweb-2024.pdf";
+import CvDevweb from "../../../../../src/dylann-xavero-devweb-2024.pdf";
 import Section from "../../../reusable-ui/Section";
 
 export default function ResumeSection() {
